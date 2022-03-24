@@ -1,0 +1,24 @@
+Package: moodleStats
+Title: Analysis of Moodle Quiz Report
+Version: 0.0.0.9000
+Authors@R: 
+    person("Kittipos", "Sirivongrungson", , "ki11ip0.s.a.s@gmail.com", role = c("aut", "cre"))
+Description: This package contain funtions that perform analyis of moodle
+    quiz report to get quiz statistics and quiz item analysis.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 4.0)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    tibble,
+    magrittr,
+    dplyr,
+    tidyr,
+    rlang,
+    tidyselect,
+    purrr,
+    broom,
+    rstatix
+LazyData: true
