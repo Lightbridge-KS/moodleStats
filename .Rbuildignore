@@ -1,7 +1,8 @@
 ^moodleStats\.Rproj$
 ^\.Rproj\.user$
-^my_dev$
+^data-raw$
 ^LICENSE\.md$
+^my_dev$
 ^my_resources$
 ^my_R$
-^data-raw$
+^my_data$
