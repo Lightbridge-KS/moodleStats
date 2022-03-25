@@ -6,6 +6,7 @@
 #' Create MoodleQuizReport
 #'
 #' Create "MoodleQuizReport" object from a Moodle Quiz Report Data.Frame(Validated)
+#' and set "quiz_setting" attribute
 #'
 #' @param x A data frame of Moodle Quiz Report
 #' @param gr_max Maximum grade of the Quiz. If `NULL`, default, will get from the Grades column.
