@@ -1,5 +1,8 @@
 
 
+
+
+
 # Get Max Grades ----------------------------------------------------------
 
 
@@ -29,11 +32,11 @@ get_setting_grade_max <- function(df_raw) {
 
 #' Get Question Number & Maximum Score
 #'
-#' For Moodle Grades file, get a question's maximum score corresponding to question's number (sorted from the first to the last question).
+#' For Moodle Grades file, get a question's maximum score corresponding to question's number.
 #'
 #' @param df_gr A data.frame of Moodle Grades report
 #'
-#' @return A numeric vector represents maximum score of each questions (sorted from low to high).
+#' @return A numeric vector represents maximum score of each questions
 #'
 get_setting_questions_no_max <- function(df_gr) {
 
@@ -43,12 +46,6 @@ get_setting_questions_no_max <- function(df_gr) {
   q_number <- as.integer(stringr::str_extract(q_colnm, "[:digit:]+"))
   # Question Max: Extract everything after /
   q_max <- as.numeric(stringr::str_extract(q_colnm, "(?<=/)(.+)"))
-
-  # Order
-  q_number_ord <- order(q_number)
-  ## Order `q_max` again (in case Question No not arranged from low to high)
-  q_number <- q_number[q_number_ord]
-  q_max <- q_max[q_number_ord]
 
   names(q_max) <- paste0("Q", q_number)
   q_max

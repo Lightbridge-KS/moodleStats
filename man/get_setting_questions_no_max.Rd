@@ -10,8 +10,8 @@ get_setting_questions_no_max(df_gr)
 \item{df_gr}{A data.frame of Moodle Grades report}
 }
 \value{
-A numeric vector represents maximum score of each questions (sorted from low to high).
+A numeric vector represents maximum score of each questions
 }
 \description{
-For Moodle Grades file, get a question's maximum score corresponding to question's number (sorted from the first to the last question).
+For Moodle Grades file, get a question's maximum score corresponding to question's number.
 }
