@@ -5,7 +5,7 @@
 
 #' Create MoodleQuizReport
 #'
-#' Create "MoodleQuizReport" object from a Moodle Quiz Report Data.Frame(Validated)
+#' Create "MoodleQuizReport" object from a Moodle Quiz Report Data.Frame (Not Validated)
 #' and set "quiz_setting" attribute
 #'
 #' @param x A data frame of Moodle Quiz Report
@@ -16,7 +16,7 @@
 create_MoodleQuizReport <- function(x,
                                     gr_max = NULL
 ){
-  stopifnot(is_quiz_report(x)) # Validate
+  # Not Validate here, to be validated in wrapper fn.
 
   x <- new_MoodleQuizReport(x) # Append Class
   # Set Attribute
@@ -69,23 +69,23 @@ is_MoodleQuizReport <- function(x){
 
 #' Create GradesReport
 #'
-#' 1.  Validate grades report
-#' 2.  Append "GradesReport" class to existing "MoodleQuizReport"
-#' 3.  Add "questions_max" to "quiz_setting" attribute
+#' Append "GradesReport" class to existing "MoodleQuizReport", then add "questions_max" to "quiz_setting" attribute
 #'
 #' @param x a MoodleQuizReport data.frame
 #' @param q_no_max (Numeric vector) Maximum score of each question with
 #' names corresponding to question number. If `NULL` (default), get from input data frame.
-#'
+#' @param filter_by List of filter by attribute
 #' @return An object of "GradesReport" subclass of class "MoodleQuizReport"
 #' with "quiz_setting" attribute which have
 #' * $grade_max
 #' * $questions_max
 #' @noRd
-create_GradesReport <- function(x, q_no_max = NULL){
+create_GradesReport <- function(x,
+                                q_no_max = NULL,
+                                filter_by = NULL
+){
 
-  # Validate
-  stopifnot(is_grades_report(x))
+  # Not Validate here, to be validated in wrapper fn.
   x <- new_GradesReport(x)
   # Append list element "questions_max" to "quiz_setting" attribute
   attr_old <- attr(x, "quiz_setting")
@@ -98,10 +98,11 @@ create_GradesReport <- function(x, q_no_max = NULL){
   }
 
   attr(x, "quiz_setting") <- append(attr_old, ls)
+  # Add filter_by attribute
+  attr(x, "filter_by") <- filter_by
   x
 
 }
-
 
 #' New GradesReport
 #'
@@ -130,4 +131,44 @@ new_GradesReport <- function(x){
 #' @noRd
 is_GradesReport <- function(x){
   inherits(x, "GradesReport")
+}
+
+
+
+# MoodleQuizSetting -------------------------------------------------------
+
+#' New MoodleQuizSetting
+#'
+#' @param x a list
+#'
+#' @return MoodleQuizSetting object
+#' @noRd
+new_MoodleQuizSetting <- function(x = list()) {
+
+  stopifnot(is.list(x))
+  # Assign "MoodleQuizSetting" as child
+  class(x) <- c("MoodleQuizSetting", class(x))
+  x
+
+}
+
+
+
+# Quiz Metadata ----------------------------------------------------
+
+
+
+#' New MoodleQuizMeta
+#'
+#' @param x list
+#'
+#' @return "MoodleQuizMeta" class appended
+#' @noRd
+new_MoodleQuizMeta <- function(x = list()) {
+
+  stopifnot(is.list(x))
+  # Assign "MoodleQuizMeta" as child
+  class(x) <- c("MoodleQuizMeta", class(x))
+  x
+
 }

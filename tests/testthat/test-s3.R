@@ -16,8 +16,8 @@ test_that("test create_MoodleQuizReport()",{
   expect_equal(attr(gr1, "quiz_setting"), list(grade_max = 9))
   expect_equal(attr(resp1, "quiz_setting"), list(grade_max = 20))
 
-  # Error
-  expect_error(create_MoodleQuizReport(iris))
+  # Not Error
+  expect_s3_class(create_MoodleQuizReport(iris), "MoodleQuizReport")
 })
 
 
@@ -36,6 +36,17 @@ test_that("test create_GradesReport()",{
     create_GradesReport()
 
   expect_named(attr(gr1, "quiz_setting"), c("grade_max", "questions_max"))
+  expect_equal(attr(gr1, "filter_by"), NULL)
 
 
+})
+
+
+
+# Quiz metatdata ----------------------------------------------------------
+
+test_that("new_MoodleQuizMeta() works",{
+
+  l <- new_MoodleQuizMeta(list(a = "a"))
+  expect_s3_class(l, "MoodleQuizMeta")
 })
