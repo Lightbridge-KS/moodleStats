@@ -57,7 +57,7 @@ test_that("get_setting_questions_no_max() works",{
   q_swab_order <- c(letters[1:3]) %>%
     setNames(c("Q. 1 /2.00", "Q. 3/6.00", "Q. 2/4.00"))
 
-  get_setting_questions_no_max(q_swab_order) %>% expect_equal(c(Q1 = 2,Q2 = 4,Q3 = 6))
+  get_setting_questions_no_max(q_swab_order) %>% expect_equal(c(Q1 = 2,Q3 = 6,Q2 = 4))
 
   ## Test: Grades Report (Internal Data)
   q_no_max <- get_setting_questions_no_max(moodleStats:::grades_df2_nyg)
@@ -70,8 +70,3 @@ test_that("get_setting_questions_no_max() works",{
 
 #get_setting_questions_no_max(grades_df)
 #get_setting_questions_no_max(moodleStats:::grades_df2_nyg)
-
-
-
-
-
