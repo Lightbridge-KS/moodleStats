@@ -6,3 +6,5 @@
 ^my_resources$
 ^my_R$
 ^my_data$
+^README\.Rmd$
+^\.github$
