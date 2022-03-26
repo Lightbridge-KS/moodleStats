@@ -8,6 +8,14 @@
 \description{
 This package contain funtions that perform analyis of moodle quiz report to get quiz statistics and quiz item analysis.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/Lightbridge-KS/moodleStats}
+  \item Report bugs at \url{https://github.com/Lightbridge-KS/moodleStats/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Kittipos Sirivongrungson \email{ki11ip0.s.a.s@gmail.com}
 
