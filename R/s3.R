@@ -134,6 +134,16 @@ is_GradesReport <- function(x){
 }
 
 
+#' Stopifnot GradesReport
+#'
+#' @param x object
+#'
+#' @return Error, If it is not "GradesReport" object
+#' @noRd
+stopifnot_GradesReport <- function(x){
+  if( !inherits(x, "GradesReport")) stop("`data` must be an object class `GradesReport`", call. = F)
+  invisible()
+}
 
 # MoodleQuizSetting -------------------------------------------------------
 
