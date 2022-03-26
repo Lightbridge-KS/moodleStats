@@ -1,0 +1,462 @@
+Surname,First name,Institution,Department,Email address,State,Started on,Completed,Time taken,Grade/9.00,Q. 1 /1.00,Q. 2 /1.00,Q. 3 /1.00,Q. 4 /1.00,Q. 5 /1.00,Q. 6 /1.00,Q. 7 /1.00,Q. 8 /1.00,Q. 9 /1.00
+el-Taha,Joshua,NA,NA,joshua.el_025@example.com,Finished,12 February 2021  1:03 PM,1 March 2021  3:35 AM,16 days 14 hours,5.00,1.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00
+al-Aydin,Tyler,NA,NA,tyler.al_192@example.com,Finished,12 February 2021  3:36 PM,28 February 2021  10:53 PM,16 days 7 hours,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Sawyer,Michael,NA,NA,michael.saw_244@example.com,In progress,16 February 2021  8:43 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Snow,Leeah,NA,NA,leeah.sno_016@example.com,Finished,21 February 2021  8:09 PM,28 February 2021  1:37 AM,6 days 5 hours,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Habib,Lawrence,NA,NA,lawrence.al_203@example.com,Finished,22 February 2021  2:27 PM,1 March 2021  2:33 PM,7 days,6.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00
+el-Saleem,Isaiah,NA,NA,isaiah.el_140@example.com,Finished,23 February 2021  7:51 PM,23 February 2021  7:59 PM,7 mins 43 secs,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Jaramillo-Ortiz,Mushtaaqa,NA,NA,mushtaaqa.jar_128@example.com,In progress,23 February 2021  9:30 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Webb,Eric,NA,NA,eric.web_095@example.com,Finished,23 February 2021  9:57 PM,23 February 2021  9:58 PM,43 secs,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Webb,Eric,NA,NA,eric.web_095@example.com,In progress,23 February 2021  9:58 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Page,Brandon,NA,NA,brandon.pag_041@example.com,Finished,24 February 2021  9:34 AM,1 March 2021  10:35 AM,5 days 1 hour,5.00,1.00,1.00,-,1.00,1.00,-,1.00,-,-
+Brady,Eugenia,NA,NA,eugenia.bra_022@example.com,Finished,24 February 2021  12:25 PM,24 February 2021  12:38 PM,12 mins 31 secs,7.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00
+Asebedo,Kristin,NA,NA,kristin.ase_067@example.com,Finished,25 February 2021  12:01 AM,25 February 2021  12:06 AM,5 mins 19 secs,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Dominguez Palacios,Annie,NA,NA,annie.dom_273@example.com,Finished,25 February 2021  1:39 AM,25 February 2021  2:15 AM,35 mins 21 secs,4.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00
+Begay,Ladayza,NA,NA,ladayza.beg_044@example.com,Finished,25 February 2021  10:17 AM,25 February 2021  10:20 AM,2 mins 54 secs,2.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Begay,Ladayza,NA,NA,ladayza.beg_044@example.com,In progress,25 February 2021  10:20 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Kiatoukaysi,Laderek,NA,NA,laderek.kia_250@example.com,Finished,25 February 2021  11:18 AM,25 February 2021  11:39 AM,20 mins 26 secs,5.00,1.00,1.00,0.00,0.00,1.00,0.00,1.00,0.00,1.00
+Ornelas,Kirby,NA,NA,kirby.orn_269@example.com,Finished,25 February 2021  1:40 PM,27 February 2021  12:18 AM,1 day 10 hours,6.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+Cotter,Haaroon,NA,NA,haaroon.cot_212@example.com,Finished,25 February 2021  2:06 PM,25 February 2021  2:16 PM,10 mins 3 secs,6.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,0.00,0.00
+Wade,Faith,NA,NA,faith.wad_218@example.com,Finished,25 February 2021  3:21 PM,25 February 2021  3:38 PM,17 mins 24 secs,8.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Mckeon,Zubair,NA,NA,zubair.mck_255@example.com,Finished,25 February 2021  3:28 PM,25 February 2021  3:49 PM,21 mins 10 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+Bailey,Nayong,NA,NA,nayong.bai_237@example.com,Finished,25 February 2021  5:21 PM,25 February 2021  5:50 PM,28 mins 55 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Zuni,Rajab,NA,NA,rajab.zun_190@example.com,Finished,25 February 2021  6:32 PM,25 February 2021  6:36 PM,4 mins 14 secs,3.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+Zuni,Rajab,NA,NA,rajab.zun_190@example.com,In progress,25 February 2021  6:37 PM,-,-,-,-,-,-,-,-,-,-,-,-
+al-Zaher,Dominique,NA,NA,dominique.al_224@example.com,Finished,25 February 2021  7:33 PM,25 February 2021  7:38 PM,4 mins 27 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+el-Miah,Austin,NA,NA,austin.el_040@example.com,Finished,25 February 2021  7:53 PM,25 February 2021  10:00 PM,2 hours 7 mins,3.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+el-Mourad,Luis,NA,NA,luis.el_124@example.com,Finished,25 February 2021  8:04 PM,1 March 2021  9:16 AM,3 days 13 hours,3.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00
+Monroy-Parra,Bryanna,NA,NA,bryanna.mon_047@example.com,Finished,25 February 2021  9:40 PM,25 February 2021  10:01 PM,20 mins 52 secs,5.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00
+Riley,Abdul Maalik,NA,NA,abdul maalik.ril_196@example.com,In progress,25 February 2021  10:32 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Schlottman,Ramla,NA,NA,ramla.sch_219@example.com,Finished,26 February 2021  1:07 AM,26 February 2021  1:26 AM,18 mins 20 secs,5.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00
+Hall,Julia,NA,NA,julia.hal_261@example.com,Finished,26 February 2021  1:23 AM,26 February 2021  1:33 AM,10 mins 13 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+Mckeon,Zubair,NA,NA,zubair.mck_255@example.com,Finished,26 February 2021  6:21 AM,26 February 2021  6:27 AM,6 mins 24 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Rietveld,Saqib,NA,NA,saqib.rie_148@example.com,Finished,26 February 2021  9:39 AM,26 February 2021  9:43 AM,3 mins 24 secs,3.00,0.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00
+Oswalt-Naasz,Shannon,NA,NA,shannon.osw_114@example.com,Finished,26 February 2021  9:42 AM,26 February 2021  9:44 AM,2 mins 53 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Ellis,Ludonnia,NA,NA,ludonnia.ell_008@example.com,Finished,26 February 2021  10:30 AM,26 February 2021  10:32 AM,1 min 58 secs,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Ellis,Ludonnia,NA,NA,ludonnia.ell_008@example.com,Finished,26 February 2021  10:32 AM,26 February 2021  10:32 AM,21 secs,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  10:51 AM,26 February 2021  4:43 PM,5 hours 52 mins,5.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00
+al-Badie,Julia,NA,NA,julia.al_281@example.com,Finished,26 February 2021  12:49 PM,26 February 2021  12:58 PM,8 mins 53 secs,4.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+Witthohn,Richard,NA,NA,richard.wit_236@example.com,Finished,26 February 2021  2:44 PM,1 March 2021  9:42 AM,2 days 18 hours,5.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00
+Lovato,Mustaba,NA,NA,mustaba.lov_009@example.com,Finished,26 February 2021  2:59 PM,26 February 2021  3:03 PM,4 mins 23 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:43 PM,26 February 2021  4:43 PM,10 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:43 PM,26 February 2021  4:43 PM,7 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:43 PM,26 February 2021  4:44 PM,6 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:44 PM,26 February 2021  4:44 PM,4 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:44 PM,26 February 2021  4:44 PM,5 secs,1.00,1.00,-,-,-,-,-,-,-,-
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:44 PM,26 February 2021  4:45 PM,40 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Nez,Gilbert,NA,NA,gilbert.nez_205@example.com,Finished,26 February 2021  4:45 PM,26 February 2021  4:51 PM,6 mins 49 secs,5.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Perez,Christine,NA,NA,christine.per_137@example.com,Finished,26 February 2021  5:11 PM,1 March 2021  9:58 AM,2 days 16 hours,2.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00
+Caldera,Kimberly,NA,NA,kimberly.cal_111@example.com,Finished,26 February 2021  5:44 PM,26 February 2021  5:56 PM,12 mins 8 secs,7.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00
+al-Amini,Calley,NA,NA,calley.al_271@example.com,Finished,26 February 2021  6:24 PM,26 February 2021  6:55 PM,31 mins 10 secs,5.00,0.00,1.00,1.00,0.00,0.00,0.00,1.00,1.00,1.00
+Lovato,Mustaba,NA,NA,mustaba.lov_009@example.com,Finished,26 February 2021  8:24 PM,1 March 2021  9:32 AM,2 days 13 hours,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Aguilar,Haaniya,NA,NA,haaniya.agu_206@example.com,Finished,26 February 2021  8:42 PM,26 February 2021  8:49 PM,6 mins 31 secs,3.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00
+Miller,Luke,NA,NA,luke.mil_119@example.com,In progress,26 February 2021  11:19 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Nguyen,Kenneth,NA,NA,kenneth.ngu_121@example.com,Finished,26 February 2021  11:47 PM,1 March 2021  12:33 AM,2 days,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Ayala,Luke,NA,NA,luke.aya_039@example.com,Finished,27 February 2021  12:11 AM,27 February 2021  12:18 AM,6 mins 52 secs,5.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Ayala,Luke,NA,NA,luke.aya_039@example.com,Finished,27 February 2021  12:18 AM,1 March 2021  12:13 PM,2 days 11 hours,6.00,0.00,1.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00
+Andrews,Christopher,NA,NA,christopher.and_046@example.com,Finished,27 February 2021  1:00 AM,27 February 2021  1:16 AM,15 mins 52 secs,3.00,0.00,1.00,-,0.00,0.00,0.00,1.00,-,1.00
+Enriquez,Matea,NA,NA,matea.enr_085@example.com,Finished,27 February 2021  2:15 AM,27 February 2021  2:28 AM,12 mins 58 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Akbar,Katelyn,NA,NA,katelyn.el_117@example.com,Finished,27 February 2021  1:28 PM,28 February 2021  11:26 PM,1 day 9 hours,3.00,0.00,0.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00
+Montano,Rozell,NA,NA,rozell.mon_145@example.com,Finished,27 February 2021  2:50 PM,27 February 2021  2:58 PM,8 mins 13 secs,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Montano,Rozell,NA,NA,rozell.mon_145@example.com,Finished,27 February 2021  2:58 PM,1 March 2021  3:33 PM,2 days,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Stevenson,Sandra,NA,NA,sandra.ste_075@example.com,Finished,27 February 2021  3:25 PM,27 February 2021  3:32 PM,7 mins 14 secs,6.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00
+Gutierrez-Lopez,Sara,NA,NA,sara.gut_195@example.com,Finished,27 February 2021  3:35 PM,27 February 2021  3:41 PM,5 mins 24 secs,5.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00
+Wong,Jasmine,NA,NA,jasmine.won_207@example.com,Finished,27 February 2021  3:45 PM,1 March 2021  3:40 PM,1 day 23 hours,4.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00
+Ku,Amber,NA,NA,amber.ku_172@example.com,Finished,27 February 2021  8:05 PM,27 February 2021  8:14 PM,8 mins 58 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Ninomiya,Jacob,NA,NA,jacob.nin_251@example.com,Finished,27 February 2021  8:33 PM,27 February 2021  8:39 PM,5 mins 32 secs,2.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00
+Bonser,Julius,NA,NA,julius.bon_089@example.com,Finished,27 February 2021  8:55 PM,27 February 2021  9:25 PM,30 mins 1 sec,3.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,1.00
+Kasper,Madison,NA,NA,madison.kas_034@example.com,Finished,27 February 2021  9:15 PM,27 February 2021  9:18 PM,2 mins 45 secs,1.00,-,-,-,-,-,-,-,-,1.00
+Kasper,Madison,NA,NA,madison.kas_034@example.com,Finished,27 February 2021  9:18 PM,27 February 2021  9:18 PM,13 secs,0.00,-,-,-,-,-,-,-,-,0.00
+Kasper,Madison,NA,NA,madison.kas_034@example.com,In progress,27 February 2021  9:18 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Andrade,Courtney,NA,NA,courtney.and_144@example.com,Finished,27 February 2021  10:18 PM,27 February 2021  10:26 PM,8 mins 39 secs,5.00,0.00,1.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00
+Rodarte,Rosa,NA,NA,rosa.rod_116@example.com,Finished,28 February 2021  12:37 AM,28 February 2021  10:51 PM,22 hours 14 mins,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Tregay,Jadon,NA,NA,jadon.tre_252@example.com,Finished,28 February 2021  1:19 AM,28 February 2021  1:35 AM,16 mins 11 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Pro,Sunsiarae,NA,NA,sunsiarae.pro_216@example.com,Finished,28 February 2021  2:24 AM,28 February 2021  2:25 AM,1 min 31 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Pro,Sunsiarae,NA,NA,sunsiarae.pro_216@example.com,Finished,28 February 2021  2:25 AM,28 February 2021  2:29 AM,3 mins 50 secs,1.00,0.00,1.00,0.00,-,-,-,-,-,-
+Pro,Sunsiarae,NA,NA,sunsiarae.pro_216@example.com,Finished,28 February 2021  2:30 AM,1 March 2021  6:50 PM,1 day 16 hours,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Mohamad,Sahel,NA,NA,sahel.el_191@example.com,Finished,28 February 2021  2:42 AM,1 March 2021  6:06 PM,1 day 15 hours,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Lovan,Amairini,NA,NA,amairini.lov_109@example.com,Finished,28 February 2021  8:38 AM,28 February 2021  8:39 AM,1 min 11 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Lovan,Amairini,NA,NA,amairini.lov_109@example.com,Finished,28 February 2021  8:39 AM,28 February 2021  8:39 AM,10 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Lovan,Amairini,NA,NA,amairini.lov_109@example.com,Finished,28 February 2021  9:04 AM,28 February 2021  9:05 AM,40 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Willner,Hakeem,NA,NA,hakeem.wil_070@example.com,Finished,28 February 2021  9:29 AM,28 February 2021  9:43 AM,14 mins 40 secs,6.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Garcia,Tina,NA,NA,tina.gar_050@example.com,Finished,28 February 2021  10:48 AM,28 February 2021  10:57 AM,8 mins 44 secs,5.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00,0.00,1.00
+Snow,Leeah,NA,NA,leeah.sno_016@example.com,In progress,28 February 2021  12:01 PM,-,-,-,-,-,-,-,-,-,-,-,-
+el-Haq,Jacob,NA,NA,jacob.el_091@example.com,In progress,28 February 2021  12:29 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Cook,Tanner,NA,NA,tanner.coo_230@example.com,Finished,28 February 2021  1:49 PM,28 February 2021  1:52 PM,3 mins 15 secs,4.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00
+Jordan,Hershel,NA,NA,hershel.jor_246@example.com,Finished,28 February 2021  2:29 PM,28 February 2021  2:38 PM,9 mins 50 secs,5.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00
+Mason,"Ma,Roof",NA,NA,"ma,roof.mas_171@example.com",Finished,28 February 2021  3:07 PM,1 March 2021  9:46 AM,18 hours 38 mins,6.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00
+Martin,Faatih,NA,NA,faatih.mar_082@example.com,Finished,28 February 2021  5:10 PM,1 March 2021  2:49 AM,9 hours 38 mins,0.00,0.00,-,-,-,-,-,-,-,-
+Roche,Faun,NA,NA,faun.roc_059@example.com,Finished,28 February 2021  5:14 PM,28 February 2021  5:19 PM,4 mins 30 secs,4.00,0.00,0.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Hume,Dominique,NA,NA,dominique.hum_002@example.com,Finished,28 February 2021  5:29 PM,28 February 2021  5:38 PM,9 mins 15 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:37 PM,28 February 2021  5:41 PM,3 mins 49 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:41 PM,28 February 2021  5:41 PM,11 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:41 PM,28 February 2021  5:41 PM,6 secs,1.00,1.00,-,-,-,-,-,-,-,-
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:41 PM,28 February 2021  5:42 PM,36 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:42 PM,28 February 2021  5:43 PM,1 min 22 secs,1.00,-,1.00,-,-,-,-,-,-,-
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:44 PM,28 February 2021  5:44 PM,8 secs,1.00,-,1.00,-,-,-,-,-,-,-
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,28 February 2021  5:44 PM,28 February 2021  5:44 PM,9 secs,1.00,0.00,1.00,-,-,-,-,-,-,-
+Kim,Louis,NA,NA,louis.kim_087@example.com,Finished,28 February 2021  6:19 PM,28 February 2021  6:24 PM,4 mins 43 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Badie,Julia,NA,NA,julia.al_281@example.com,Finished,28 February 2021  6:32 PM,1 March 2021  9:42 AM,15 hours 9 mins,7.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+Miera,Anthony,NA,NA,anthony.mie_062@example.com,In progress,28 February 2021  8:01 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Huizar-Gutierrez,Derek,NA,NA,derek.hui_188@example.com,Finished,28 February 2021  8:03 PM,28 February 2021  8:58 PM,54 mins 32 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Forbis,Zackieus,NA,NA,zackieus.for_080@example.com,Finished,28 February 2021  8:07 PM,1 March 2021  1:05 AM,4 hours 58 mins,4.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+Herndon,Fawwaaz,NA,NA,fawwaaz.her_275@example.com,Finished,28 February 2021  8:44 PM,1 March 2021  8:57 AM,12 hours 12 mins,5.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,1.00,1.00
+Malin,Savannah,NA,NA,savannah.mal_033@example.com,Finished,28 February 2021  8:55 PM,28 February 2021  9:16 PM,21 mins 7 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Blackwell,Steven,NA,NA,steven.bla_112@example.com,Finished,28 February 2021  8:57 PM,28 February 2021  9:07 PM,10 mins 20 secs,7.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00
+Blackwell,Steven,NA,NA,steven.bla_112@example.com,In progress,28 February 2021  9:07 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Umemura,Timothy,NA,NA,timothy.ume_042@example.com,Finished,28 February 2021  9:21 PM,28 February 2021  9:25 PM,3 mins 48 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Villalobos Nunez,Fue,NA,NA,fue.vil_090@example.com,Finished,28 February 2021  9:26 PM,28 February 2021  9:38 PM,11 mins 56 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+West,Sara,NA,NA,sara.wes_158@example.com,Finished,28 February 2021  9:26 PM,28 February 2021  9:38 PM,11 mins 23 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+Washington,Jocelyn,NA,NA,jocelyn.was_068@example.com,Finished,28 February 2021  9:30 PM,28 February 2021  9:39 PM,8 mins 46 secs,2.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00
+el-Husain,Caleb,NA,NA,caleb.el_010@example.com,Finished,28 February 2021  9:31 PM,28 February 2021  9:46 PM,15 mins 4 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00
+Mckeon,Zubair,NA,NA,zubair.mck_255@example.com,In progress,28 February 2021  9:37 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Ornelas,Kirby,NA,NA,kirby.orn_269@example.com,Finished,28 February 2021  9:42 PM,28 February 2021  9:58 PM,15 mins 48 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Azzam,Dyllan,NA,NA,dyllan.al_060@example.com,Finished,28 February 2021  9:47 PM,28 February 2021  10:06 PM,19 mins,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+el-Miah,Austin,NA,NA,austin.el_040@example.com,Finished,28 February 2021  9:50 PM,1 March 2021  3:05 AM,5 hours 14 mins,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Swimmer,Isaac,NA,NA,isaac.swi_055@example.com,Finished,28 February 2021  9:52 PM,28 February 2021  10:04 PM,12 mins 17 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00
+Valdez,Scott,NA,NA,scott.val_064@example.com,Finished,28 February 2021  9:53 PM,28 February 2021  10:04 PM,10 mins 38 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Swimmer,Isaac,NA,NA,isaac.swi_055@example.com,In progress,28 February 2021  10:04 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Hall,Qamraaa,NA,NA,qamraaa.hal_155@example.com,Finished,28 February 2021  10:05 PM,28 February 2021  10:25 PM,20 mins 50 secs,3.00,1.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00
+Rodriguez,Damaris,NA,NA,damaris.rod_175@example.com,Finished,28 February 2021  10:08 PM,28 February 2021  10:23 PM,14 mins 33 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Rodriguez,Damaris,NA,NA,damaris.rod_175@example.com,In progress,28 February 2021  10:23 PM,-,-,-,-,-,-,-,-,-,-,-,-
+al-Afzal,Dennis,NA,NA,dennis.al_173@example.com,Finished,28 February 2021  10:27 PM,28 February 2021  10:36 PM,9 mins 4 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Middelkamp,Tachayanne,NA,NA,tachayanne.mid_135@example.com,Finished,28 February 2021  10:32 PM,28 February 2021  10:45 PM,12 mins 59 secs,5.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,0.00
+al-Azzam,Dyllan,NA,NA,dyllan.al_060@example.com,Finished,28 February 2021  10:36 PM,1 March 2021  12:23 AM,1 hour 47 mins,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Bell,Nathan,NA,NA,nathan.bel_241@example.com,Finished,28 February 2021  10:42 PM,28 February 2021  10:58 PM,16 mins 14 secs,4.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00
+Middelkamp,Tachayanne,NA,NA,tachayanne.mid_135@example.com,In progress,28 February 2021  10:58 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Pierce,Mauriesha,NA,NA,mauriesha.pie_138@example.com,Finished,28 February 2021  10:58 PM,28 February 2021  11:24 PM,25 mins 38 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Gallegos,Samantha,NA,NA,samantha.gal_123@example.com,Finished,28 February 2021  10:58 PM,28 February 2021  11:00 PM,2 mins 16 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Nicholas,Destinee,NA,NA,destinee.nic_143@example.com,Finished,28 February 2021  10:59 PM,28 February 2021  11:17 PM,17 mins 11 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Villalobos Nunez,Fue,NA,NA,fue.vil_090@example.com,In progress,28 February 2021  11:09 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Sheafe,Michelle,NA,NA,michelle.she_239@example.com,Finished,28 February 2021  11:13 PM,28 February 2021  11:32 PM,18 mins 27 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Roberts,Marilyn,NA,NA,marilyn.rob_229@example.com,Finished,28 February 2021  11:21 PM,28 February 2021  11:30 PM,9 mins 4 secs,6.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00
+Barnes,Lourdes,NA,NA,lourdes.bar_167@example.com,Finished,28 February 2021  11:23 PM,28 February 2021  11:29 PM,5 mins 50 secs,4.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00,0.00,0.00
+Jacobs,Khaalid,NA,NA,khaalid.jac_166@example.com,Finished,28 February 2021  11:39 PM,28 February 2021  11:47 PM,8 mins 12 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Lucareli,Thaabita,NA,NA,thaabita.luc_215@example.com,Finished,1 March 2021  12:07 AM,1 March 2021  12:32 AM,25 mins 3 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Hernandez Mondragon,Zaahid,NA,NA,zaahid.her_120@example.com,Finished,1 March 2021  12:09 AM,1 March 2021  9:50 AM,9 hours 40 mins,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Wing,Janea,NA,NA,janea.win_141@example.com,Finished,1 March 2021  12:27 AM,1 March 2021  12:32 AM,5 mins,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Forbis,Zackieus,NA,NA,zackieus.for_080@example.com,Finished,1 March 2021  1:05 AM,1 March 2021  1:45 PM,12 hours 39 mins,5.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00
+Martin,Adriana,NA,NA,adriana.mar_240@example.com,Finished,1 March 2021  1:21 AM,1 March 2021  9:44 AM,8 hours 22 mins,3.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00
+Lisle,Joel,NA,NA,joel.lis_096@example.com,Finished,1 March 2021  1:23 AM,1 March 2021  1:42 AM,19 mins 6 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Siddiqi,Levi,NA,NA,levi.al_037@example.com,Finished,1 March 2021  1:24 AM,1 March 2021  1:33 AM,9 mins 22 secs,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Mathis,Bethelhem,NA,NA,bethelhem.mat_213@example.com,Finished,1 March 2021  1:28 AM,1 March 2021  1:39 AM,11 mins,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+Moreno,Jamal,NA,NA,jamal.mor_104@example.com,Finished,1 March 2021  1:28 AM,1 March 2021  1:34 AM,6 mins 38 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+al-Siddiqi,Levi,NA,NA,levi.al_037@example.com,Finished,1 March 2021  1:33 AM,1 March 2021  1:42 AM,8 mins 25 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Moreno,Jamal,NA,NA,jamal.mor_104@example.com,In progress,1 March 2021  1:34 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Lee,Jazzmin,NA,NA,jazzmin.lee_122@example.com,Finished,1 March 2021  1:46 AM,1 March 2021  1:52 AM,6 mins 56 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Sketers,Weslee,NA,NA,weslee.ske_134@example.com,Finished,1 March 2021  1:53 AM,1 March 2021  1:58 AM,4 mins 40 secs,5.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00
+Poling,Dylahn,NA,NA,dylahn.pol_245@example.com,Finished,1 March 2021  1:57 AM,1 March 2021  2:03 AM,6 mins 31 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00
+Sketers,Weslee,NA,NA,weslee.ske_134@example.com,Finished,1 March 2021  1:58 AM,1 March 2021  9:45 AM,7 hours 47 mins,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Depriest,Emily,NA,NA,emily.dep_049@example.com,Finished,1 March 2021  2:07 AM,1 March 2021  2:08 AM,1 min 36 secs,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00
+Goodell,Jaasim,NA,NA,jaasim.goo_020@example.com,Finished,1 March 2021  2:08 AM,1 March 2021  2:11 AM,3 mins 32 secs,7.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00
+el-Badour,Concepcion,NA,NA,concepcion.el_214@example.com,Finished,1 March 2021  2:12 AM,1 March 2021  2:20 AM,8 mins 12 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Velasquez,Sidqi,NA,NA,sidqi.vel_079@example.com,Finished,1 March 2021  2:16 AM,1 March 2021  2:30 AM,14 mins 47 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Martin,Faatih,NA,NA,faatih.mar_082@example.com,Finished,1 March 2021  2:49 AM,1 March 2021  2:49 AM,12 secs,1.00,1.00,-,-,-,-,-,-,-,-
+Martin,Faatih,NA,NA,faatih.mar_082@example.com,Finished,1 March 2021  2:49 AM,1 March 2021  2:49 AM,9 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Martin,Faatih,NA,NA,faatih.mar_082@example.com,Finished,1 March 2021  2:49 AM,1 March 2021  2:49 AM,14 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Martin,Faatih,NA,NA,faatih.mar_082@example.com,Finished,1 March 2021  2:49 AM,1 March 2021  2:50 AM,7 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Martin,Faatih,NA,NA,faatih.mar_082@example.com,Finished,1 March 2021  2:50 AM,1 March 2021  2:03 PM,11 hours 13 mins,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Buccieri,Saurya,NA,NA,saurya.buc_243@example.com,Finished,1 March 2021  2:55 AM,1 March 2021  2:59 AM,4 mins 2 secs,3.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00
+West,Sara,NA,NA,sara.wes_158@example.com,Finished,1 March 2021  3:04 AM,1 March 2021  3:05 AM,53 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Bolton,Morgan,NA,NA,morgan.bol_256@example.com,Finished,1 March 2021  3:06 AM,1 March 2021  3:23 AM,16 mins 28 secs,8.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+al-Noorani,Joshua,NA,NA,joshua.al_139@example.com,Finished,1 March 2021  3:48 AM,1 March 2021  3:58 AM,9 mins 50 secs,4.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+Fazio,Dakota,NA,NA,dakota.faz_153@example.com,Finished,1 March 2021  3:59 AM,1 March 2021  4:05 AM,6 mins 5 secs,6.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00
+Fazio,Dakota,NA,NA,dakota.faz_153@example.com,In progress,1 March 2021  4:05 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Walker,Michael,NA,NA,michael.wal_149@example.com,Finished,1 March 2021  5:26 AM,1 March 2021  5:39 AM,13 mins 15 secs,3.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00
+Walker,Michael,NA,NA,michael.wal_149@example.com,Finished,1 March 2021  5:39 AM,1 March 2021  5:40 AM,25 secs,1.00,1.00,-,-,-,-,-,-,-,-
+Stevenson,Sandra,NA,NA,sandra.ste_075@example.com,Finished,1 March 2021  6:07 AM,1 March 2021  6:21 AM,14 mins 29 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Brady,Eugenia,NA,NA,eugenia.bra_022@example.com,Finished,1 March 2021  7:30 AM,1 March 2021  7:31 AM,28 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Diggins,Vanessa,NA,NA,vanessa.dig_162@example.com,Finished,1 March 2021  7:44 AM,1 March 2021  8:04 AM,20 mins 2 secs,2.00,0.00,0.00,0.00,0.00,1.00,0.00,1.00,0.00,0.00
+Epstein,Jonathon,NA,NA,jonathon.eps_217@example.com,Finished,1 March 2021  7:48 AM,1 March 2021  8:16 AM,28 mins,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+So,Vivian,NA,NA,vivian.so_268@example.com,Finished,1 March 2021  7:50 AM,1 March 2021  8:16 AM,26 mins 23 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00
+Toussaint,Deisha,NA,NA,deisha.tou_005@example.com,Finished,1 March 2021  7:54 AM,1 March 2021  9:47 AM,1 hour 53 mins,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Ortiz Monge,Munisa,NA,NA,munisa.ort_259@example.com,Finished,1 March 2021  8:16 AM,1 March 2021  8:29 AM,13 mins 7 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+el-Husain,Caleb,NA,NA,caleb.el_010@example.com,Finished,1 March 2021  8:17 AM,1 March 2021  8:57 AM,39 mins 51 secs,7.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+Fifita,Aarifa,NA,NA,aarifa.fif_066@example.com,Finished,1 March 2021  8:23 AM,1 March 2021  8:34 AM,11 mins 36 secs,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Liam,Taylor,NA,NA,taylor.lia_282@example.com,Finished,1 March 2021  8:26 AM,1 March 2021  8:32 AM,5 mins 40 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+Barbour,Julian,NA,NA,julian.bar_253@example.com,Finished,1 March 2021  8:28 AM,1 March 2021  8:38 AM,9 mins 43 secs,4.00,0.00,1.00,1.00,1.00,0.00,0.00,1.00,0.00,0.00
+Leyba,Zane,NA,NA,zane.ley_097@example.com,Finished,1 March 2021  8:29 AM,1 March 2021  8:42 AM,12 mins 54 secs,7.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00
+Mckinney,Cheyenne,NA,NA,cheyenne.mck_257@example.com,Finished,1 March 2021  8:30 AM,1 March 2021  8:41 AM,11 mins 5 secs,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Fifita,Aarifa,NA,NA,aarifa.fif_066@example.com,Finished,1 March 2021  8:34 AM,1 March 2021  8:35 AM,13 secs,1.00,1.00,-,-,-,-,-,-,-,-
+al-Abbasi,Teresa,NA,NA,teresa.al_274@example.com,Finished,1 March 2021  8:38 AM,1 March 2021  8:44 AM,5 mins 43 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Braley,Shaun,NA,NA,shaun.bra_233@example.com,Finished,1 March 2021  8:40 AM,1 March 2021  8:57 AM,16 mins 44 secs,4.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,0.00
+Murphy,Andrew,NA,NA,andrew.mur_072@example.com,Finished,1 March 2021  8:43 AM,1 March 2021  8:48 AM,4 mins 33 secs,3.00,0.00,1.00,0.00,0.00,0.00,1.00,0.00,1.00,0.00
+Raddatz,Brooke,NA,NA,brooke.rad_113@example.com,Finished,1 March 2021  8:45 AM,1 March 2021  9:00 AM,15 mins 11 secs,6.00,1.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,1.00
+al-Azad,Trenton,NA,NA,trenton.al_223@example.com,Finished,1 March 2021  8:47 AM,1 March 2021  9:02 AM,14 mins 50 secs,2.00,0.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00
+al-Basa,Stefan,NA,NA,stefan.al_043@example.com,Finished,1 March 2021  8:51 AM,1 March 2021  8:56 AM,5 mins 45 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Archuleta,Acineth,NA,NA,acineth.arc_211@example.com,Finished,1 March 2021  8:51 AM,1 March 2021  9:04 AM,13 mins 18 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Marsh,Ariel,NA,NA,ariel.mar_088@example.com,Finished,1 March 2021  8:51 AM,1 March 2021  9:01 AM,10 mins 30 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+al-Abed,Anthony,NA,NA,anthony.al_086@example.com,Finished,1 March 2021  8:53 AM,1 March 2021  9:06 AM,13 mins 36 secs,5.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00
+Teferi,Granielle,NA,NA,granielle.tef_118@example.com,Finished,1 March 2021  8:54 AM,1 March 2021  8:57 AM,3 mins 17 secs,4.00,0.00,1.00,0.00,0.00,0.00,1.00,1.00,0.00,1.00
+Wilson,Puspa,NA,NA,puspa.wil_133@example.com,Finished,1 March 2021  8:54 AM,1 March 2021  9:01 AM,6 mins 36 secs,6.00,1.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00
+Alene,Jose,NA,NA,jose.ale_130@example.com,Finished,1 March 2021  8:55 AM,1 March 2021  9:10 AM,14 mins 26 secs,5.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Archambault,Habeeba,NA,NA,habeeba.arc_115@example.com,Finished,1 March 2021  8:56 AM,1 March 2021  9:06 AM,10 mins 27 secs,2.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00
+al-Basa,Stefan,NA,NA,stefan.al_043@example.com,Finished,1 March 2021  8:57 AM,1 March 2021  9:04 AM,7 mins 34 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Walker,Michael,NA,NA,michael.wal_149@example.com,Finished,1 March 2021  8:57 AM,1 March 2021  8:58 AM,1 min 15 secs,3.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00
+Herndon,Fawwaaz,NA,NA,fawwaaz.her_275@example.com,Finished,1 March 2021  8:57 AM,1 March 2021  9:31 AM,34 mins 6 secs,5.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,0.00
+Schlottman,Ramla,NA,NA,ramla.sch_219@example.com,Finished,1 March 2021  8:58 AM,1 March 2021  9:39 AM,40 mins 57 secs,7.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00
+Mondragon,Kala,NA,NA,kala.mon_092@example.com,Finished,1 March 2021  8:58 AM,1 March 2021  9:33 AM,34 mins 40 secs,6.00,1.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Manchego,Jacqueline,NA,NA,jacqueline.man_103@example.com,Finished,1 March 2021  8:59 AM,1 March 2021  9:19 AM,20 mins 42 secs,5.00,0.00,1.00,1.00,0.00,0.00,0.00,1.00,1.00,1.00
+Murphy,Jawhara,NA,NA,jawhara.mur_105@example.com,Finished,1 March 2021  8:59 AM,1 March 2021  9:12 AM,12 mins 56 secs,4.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00
+Marquez,Kaeyla,NA,NA,kaeyla.mar_157@example.com,Finished,1 March 2021  8:59 AM,1 March 2021  9:08 AM,9 mins,5.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,0.00
+Wall,Lourdes,NA,NA,lourdes.wal_026@example.com,Finished,1 March 2021  9:00 AM,1 March 2021  9:05 AM,4 mins 2 secs,4.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00
+Daigle,Donald,NA,NA,donald.dai_163@example.com,Finished,1 March 2021  9:01 AM,1 March 2021  9:08 AM,7 mins 47 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Ozer,Johnny,NA,NA,johnny.al_015@example.com,Finished,1 March 2021  9:01 AM,1 March 2021  9:09 AM,7 mins 56 secs,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Salihagic,Yaasir,NA,NA,yaasir.sal_035@example.com,Finished,1 March 2021  9:01 AM,1 March 2021  9:14 AM,13 mins,6.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,-,0.00
+Wilson,Puspa,NA,NA,puspa.wil_133@example.com,Finished,1 March 2021  9:02 AM,1 March 2021  3:39 PM,6 hours 37 mins,8.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00
+Shen,Insaaf,NA,NA,insaaf.she_018@example.com,Finished,1 March 2021  9:02 AM,1 March 2021  9:12 AM,10 mins 24 secs,5.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00
+Giron,Jaylun,NA,NA,jaylun.gir_094@example.com,Finished,1 March 2021  9:02 AM,1 March 2021  9:09 AM,6 mins 56 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Cardozo,Lauren,NA,NA,lauren.car_004@example.com,Finished,1 March 2021  9:02 AM,1 March 2021  9:09 AM,6 mins 52 secs,6.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00
+Cottonwood,Farajallah,NA,NA,farajallah.cot_021@example.com,Finished,1 March 2021  9:03 AM,1 March 2021  9:20 AM,17 mins 5 secs,3.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00
+Oberly,Nathaniel,NA,NA,nathaniel.obe_174@example.com,Finished,1 March 2021  9:04 AM,1 March 2021  9:15 AM,11 mins 22 secs,7.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00
+Durling,Shamika,NA,NA,shamika.dur_052@example.com,Finished,1 March 2021  9:04 AM,1 March 2021  9:15 AM,10 mins 37 secs,5.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+Archuleta,Acineth,NA,NA,acineth.arc_211@example.com,In progress,1 March 2021  9:04 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Ellison,Connor,NA,NA,connor.ell_151@example.com,Finished,1 March 2021  9:05 AM,1 March 2021  9:15 AM,10 mins 20 secs,4.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00
+Wall,Lourdes,NA,NA,lourdes.wal_026@example.com,Finished,1 March 2021  9:05 AM,1 March 2021  9:05 AM,41 secs,3.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00
+Aguilera,Javier-Luis,NA,NA,javier-luis.agu_038@example.com,Finished,1 March 2021  9:05 AM,1 March 2021  9:22 AM,17 mins 18 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Slee Ackerson,Iyonna,NA,NA,iyonna.sle_197@example.com,Finished,1 March 2021  9:05 AM,1 March 2021  9:21 AM,15 mins 12 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Swain,Minerva,NA,NA,minerva.swa_051@example.com,Finished,1 March 2021  9:05 AM,1 March 2021  9:22 AM,16 mins 23 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Doanes,Rebecca,NA,NA,rebecca.doa_045@example.com,Finished,1 March 2021  9:06 AM,1 March 2021  9:32 AM,26 mins 32 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+Martinez-Alcon,Kayla,NA,NA,kayla.mar_262@example.com,Finished,1 March 2021  9:06 AM,1 March 2021  9:10 AM,3 mins 59 secs,4.00,1.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,1.00
+Archambault,Habeeba,NA,NA,habeeba.arc_115@example.com,Finished,1 March 2021  9:06 AM,1 March 2021  9:31 AM,24 mins 25 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+al-Hamed,Kimberly,NA,NA,kimberly.al_194@example.com,Finished,1 March 2021  9:07 AM,1 March 2021  9:15 AM,7 mins 56 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Hand,Karla,NA,NA,karla.han_150@example.com,Finished,1 March 2021  9:07 AM,1 March 2021  9:12 AM,5 mins 14 secs,6.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Wade,Faith,NA,NA,faith.wad_218@example.com,Finished,1 March 2021  9:08 AM,1 March 2021  9:13 AM,4 mins 50 secs,8.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Larkin,Fue,NA,NA,fue.lar_235@example.com,Finished,1 March 2021  9:08 AM,1 March 2021  9:37 AM,28 mins 55 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+al-Emami,Ashia,NA,NA,ashia.al_019@example.com,Finished,1 March 2021  9:08 AM,1 March 2021  9:19 AM,10 mins 30 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Hauert,Charell,NA,NA,charell.hau_027@example.com,Finished,1 March 2021  9:09 AM,1 March 2021  9:12 AM,3 mins 39 secs,2.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00
+al-Ozer,Johnny,NA,NA,johnny.al_015@example.com,Finished,1 March 2021  9:09 AM,1 March 2021  11:44 AM,2 hours 35 mins,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Andrade Enriquez,Shawnee,NA,NA,shawnee.and_107@example.com,Finished,1 March 2021  9:10 AM,1 March 2021  9:15 AM,5 mins 23 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+Tak,Summer,NA,NA,summer.tak_264@example.com,Finished,1 March 2021  9:10 AM,1 March 2021  9:18 AM,7 mins 46 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+Vazquez Barcenaz,Ameena,NA,NA,ameena.vaz_003@example.com,Finished,1 March 2021  9:11 AM,1 March 2021  9:21 AM,9 mins 21 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Franklin,Jesse,NA,NA,jesse.fra_030@example.com,Finished,1 March 2021  9:12 AM,1 March 2021  9:28 AM,15 mins 48 secs,3.00,0.00,1.00,0.00,1.00,0.00,0.00,0.00,1.00,0.00
+Abrams,Miqdaam,NA,NA,miqdaam.abr_276@example.com,Finished,1 March 2021  9:12 AM,1 March 2021  9:25 AM,13 mins 22 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Maldonado,Dustin,NA,NA,dustin.mal_204@example.com,Finished,1 March 2021  9:12 AM,1 March 2021  9:26 AM,13 mins 45 secs,7.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00
+Willner,Hakeem,NA,NA,hakeem.wil_070@example.com,Finished,1 March 2021  9:12 AM,1 March 2021  9:55 AM,42 mins 30 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Durling,Shamika,NA,NA,shamika.dur_052@example.com,In progress,1 March 2021  9:15 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Andrade Enriquez,Shawnee,NA,NA,shawnee.and_107@example.com,Finished,1 March 2021  9:15 AM,1 March 2021  9:38 AM,23 mins 8 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Johnson,Preston,NA,NA,preston.joh_012@example.com,Finished,1 March 2021  9:15 AM,1 March 2021  9:24 AM,9 mins,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Edd,Abysolome,NA,NA,abysolome.edd_073@example.com,Finished,1 March 2021  9:16 AM,1 March 2021  9:41 AM,25 mins 5 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Gardner,Don,NA,NA,don.gar_083@example.com,Finished,1 March 2021  9:16 AM,1 March 2021  9:43 AM,26 mins 28 secs,6.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Millen,Katrina,NA,NA,katrina.mil_184@example.com,Finished,1 March 2021  9:16 AM,1 March 2021  9:25 AM,8 mins 30 secs,6.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Cummings,Patricia,NA,NA,patricia.cum_098@example.com,Finished,1 March 2021  9:17 AM,1 March 2021  9:26 AM,9 mins 39 secs,5.00,1.00,0.00,1.00,1.00,0.00,0.00,1.00,1.00,0.00
+al-Hamed,Kimberly,NA,NA,kimberly.al_194@example.com,Finished,1 March 2021  9:17 AM,1 March 2021  9:19 AM,2 mins 10 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Najar Madera,Aspen,NA,NA,aspen.naj_177@example.com,Finished,1 March 2021  9:18 AM,1 March 2021  9:27 AM,8 mins 52 secs,3.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00
+Phenna,Corey,NA,NA,corey.phe_185@example.com,Finished,1 March 2021  9:18 AM,1 March 2021  9:47 AM,28 mins 46 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Johnson,Joseph,NA,NA,joseph.joh_058@example.com,Finished,1 March 2021  9:18 AM,1 March 2021  9:36 AM,18 mins 9 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Shen,Zackieus,NA,NA,zackieus.she_181@example.com,Finished,1 March 2021  9:19 AM,1 March 2021  9:25 AM,6 mins 27 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Arellano,Karen,NA,NA,karen.are_078@example.com,Finished,1 March 2021  9:19 AM,1 March 2021  9:30 AM,11 mins 26 secs,7.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Krier,Jason,NA,NA,jason.kri_266@example.com,Finished,1 March 2021  9:19 AM,1 March 2021  9:36 AM,16 mins 47 secs,7.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Johnson,Shelby,NA,NA,shelby.joh_074@example.com,Finished,1 March 2021  9:19 AM,1 March 2021  9:26 AM,7 mins 6 secs,3.00,0.00,0.00,0.00,1.00,0.00,0.00,1.00,1.00,0.00
+Harris,Levia,NA,NA,levia.har_129@example.com,Finished,1 March 2021  9:20 AM,1 March 2021  9:36 AM,16 mins,4.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00
+Dobson,Jenna,NA,NA,jenna.dob_053@example.com,Finished,1 March 2021  9:20 AM,1 March 2021  9:31 AM,10 mins 26 secs,7.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,0.00
+Cottonwood,Farajallah,NA,NA,farajallah.cot_021@example.com,Finished,1 March 2021  9:20 AM,1 March 2021  9:50 AM,30 mins 3 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Waterhouse,Cuahutemoc,NA,NA,cuahutemoc.wat_227@example.com,Finished,1 March 2021  9:20 AM,1 March 2021  9:26 AM,5 mins 30 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Mourad,Luis,NA,NA,luis.el_124@example.com,In progress,1 March 2021  9:21 AM,-,-,-,-,-,-,-,-,-,-,-,-
+el-Ben,Janetta,NA,NA,janetta.el_165@example.com,Finished,1 March 2021  9:21 AM,1 March 2021  9:28 AM,6 mins 20 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+London,Ameena,NA,NA,ameena.lon_254@example.com,Finished,1 March 2021  9:21 AM,1 March 2021  9:33 AM,11 mins 16 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Oswalt-Naasz,Shannon,NA,NA,shannon.osw_114@example.com,Finished,1 March 2021  9:22 AM,1 March 2021  9:26 AM,3 mins 45 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Adams,Laila,NA,NA,laila.ada_170@example.com,Finished,1 March 2021  9:22 AM,1 March 2021  9:28 AM,5 mins 44 secs,3.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00
+Hannebaum,Mundhir,NA,NA,mundhir.han_160@example.com,Finished,1 March 2021  9:23 AM,1 March 2021  9:29 AM,6 mins 15 secs,3.00,0.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00
+Depriest,Emily,NA,NA,emily.dep_049@example.com,Finished,1 March 2021  9:23 AM,1 March 2021  9:24 AM,49 secs,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00
+el-Jamal,Joseph,NA,NA,joseph.el_024@example.com,Finished,1 March 2021  9:24 AM,1 March 2021  9:32 AM,7 mins 34 secs,6.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+Shen,Zackieus,NA,NA,zackieus.she_181@example.com,In progress,1 March 2021  9:25 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Maldonado,Dustin,NA,NA,dustin.mal_204@example.com,In progress,1 March 2021  9:26 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Bunch,Natalie,NA,NA,natalie.bun_272@example.com,Finished,1 March 2021  9:30 AM,1 March 2021  9:56 AM,26 mins 26 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Shafi,Jaelyn,NA,NA,jaelyn.sha_136@example.com,In progress,1 March 2021  9:30 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Greenlee,Nazmiyya,NA,NA,nazmiyya.gre_011@example.com,Finished,1 March 2021  9:30 AM,1 March 2021  9:46 AM,15 mins 12 secs,3.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00
+al-Aman,Gurinder,NA,NA,gurinder.al_221@example.com,Finished,1 March 2021  9:31 AM,1 March 2021  9:37 AM,6 mins 4 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Su,Dhaki,NA,NA,dhaki.su_178@example.com,Finished,1 March 2021  9:32 AM,1 March 2021  9:37 AM,5 mins 15 secs,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Murphy,Jawhara,NA,NA,jawhara.mur_105@example.com,Finished,1 March 2021  9:33 AM,1 March 2021  9:40 AM,7 mins 23 secs,6.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00
+el-Jamal,Joseph,NA,NA,joseph.el_024@example.com,Finished,1 March 2021  9:33 AM,1 March 2021  9:51 AM,18 mins 36 secs,7.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+London,Ameena,NA,NA,ameena.lon_254@example.com,Finished,1 March 2021  9:33 AM,1 March 2021  9:40 AM,6 mins 55 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Mondragon,Kala,NA,NA,kala.mon_092@example.com,Finished,1 March 2021  9:33 AM,1 March 2021  9:44 AM,11 mins 2 secs,7.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Brewster,Roman,NA,NA,roman.bre_202@example.com,Finished,1 March 2021  9:33 AM,1 March 2021  9:35 AM,1 min 38 secs,4.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00
+Bison,Dau,NA,NA,dau.bis_131@example.com,Finished,1 March 2021  9:34 AM,1 March 2021  9:43 AM,9 mins 13 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Martinez,Colin,NA,NA,colin.mar_057@example.com,Finished,1 March 2021  9:34 AM,1 March 2021  9:45 AM,10 mins 57 secs,4.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00
+al-Abbasi,Teresa,NA,NA,teresa.al_274@example.com,Finished,1 March 2021  9:34 AM,1 March 2021  9:40 AM,5 mins 20 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Buck,Najlaa,NA,NA,najlaa.buc_146@example.com,Finished,1 March 2021  9:34 AM,1 March 2021  9:39 AM,4 mins 48 secs,4.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00
+Bell,Nathan,NA,NA,nathan.bel_241@example.com,Finished,1 March 2021  9:37 AM,1 March 2021  9:38 AM,1 min 12 secs,4.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00
+al-Abdou,Brittany,NA,NA,brittany.al_267@example.com,Finished,1 March 2021  9:38 AM,1 March 2021  9:41 AM,3 mins 41 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Connelly,Taamir,NA,NA,taamir.con_077@example.com,Finished,1 March 2021  9:38 AM,1 March 2021  10:01 AM,23 mins 2 secs,4.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00
+Williams,Chierika,NA,NA,chierika.wil_110@example.com,Finished,1 March 2021  9:38 AM,1 March 2021  9:54 AM,15 mins 44 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Buck,Najlaa,NA,NA,najlaa.buc_146@example.com,Finished,1 March 2021  9:39 AM,1 March 2021  9:52 AM,13 mins 5 secs,6.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Ton,Anyssa,NA,NA,anyssa.ton_084@example.com,Finished,1 March 2021  9:40 AM,1 March 2021  9:46 AM,6 mins 7 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Pham,Kali,NA,NA,kali.pha_232@example.com,Finished,1 March 2021  9:40 AM,1 March 2021  12:41 PM,3 hours,7.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+Vermillion,Austin,NA,NA,austin.ver_029@example.com,Finished,1 March 2021  9:41 AM,1 March 2021  9:45 AM,4 mins 15 secs,7.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,1.00
+Masters,Elena,NA,NA,elena.mas_014@example.com,Finished,1 March 2021  9:41 AM,1 March 2021  9:50 AM,8 mins 19 secs,4.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,1.00,0.00
+Miller,Brandon,NA,NA,brandon.mil_108@example.com,Finished,1 March 2021  9:42 AM,1 March 2021  9:48 AM,5 mins 36 secs,1.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Adams,Laila,NA,NA,laila.ada_170@example.com,In progress,1 March 2021  9:42 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Witthohn,Richard,NA,NA,richard.wit_236@example.com,In progress,1 March 2021  9:42 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Gonzalez,Iyonna,NA,NA,iyonna.gon_081@example.com,Finished,1 March 2021  9:43 AM,1 March 2021  9:50 AM,7 mins 20 secs,4.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,0.00
+Bison,Dau,NA,NA,dau.bis_131@example.com,Finished,1 March 2021  9:43 AM,1 March 2021  9:48 AM,4 mins 54 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00
+el-Ishmael,Taiseer,NA,NA,taiseer.el_161@example.com,Finished,1 March 2021  9:44 AM,1 March 2021  9:51 AM,7 mins 22 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+Mondragon,Kala,NA,NA,kala.mon_092@example.com,Finished,1 March 2021  9:45 AM,1 March 2021  9:49 AM,4 mins 8 secs,8.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Hall,Qamraaa,NA,NA,qamraaa.hal_155@example.com,Finished,1 March 2021  9:45 AM,1 March 2021  9:48 AM,2 mins 30 secs,3.00,1.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00
+Vang,Dominic,NA,NA,dominic.van_231@example.com,Finished,1 March 2021  9:46 AM,1 March 2021  9:53 AM,7 mins 31 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Hernandez,Branden,NA,NA,branden.her_164@example.com,Finished,1 March 2021  9:47 AM,1 March 2021  9:57 AM,10 mins 22 secs,2.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00
+Toussaint,Deisha,NA,NA,deisha.tou_005@example.com,In progress,1 March 2021  9:47 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Miller,Brandon,NA,NA,brandon.mil_108@example.com,In progress,1 March 2021  9:48 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Leyba,Zane,NA,NA,zane.ley_097@example.com,Finished,1 March 2021  9:48 AM,1 March 2021  9:54 AM,5 mins 55 secs,8.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00
+Hume,Dominique,NA,NA,dominique.hum_002@example.com,Finished,1 March 2021  9:48 AM,1 March 2021  9:49 AM,48 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Dobey,Lauren,NA,NA,lauren.dob_063@example.com,Finished,1 March 2021  9:49 AM,1 March 2021  9:59 AM,9 mins 30 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Rupe,Brittney,NA,NA,brittney.rup_169@example.com,Finished,1 March 2021  9:49 AM,1 March 2021  9:52 AM,2 mins 55 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Greeley,Aaron,NA,NA,aaron.gre_208@example.com,Finished,1 March 2021  9:49 AM,1 March 2021  9:58 AM,8 mins 38 secs,6.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Mondragon,Kala,NA,NA,kala.mon_092@example.com,Finished,1 March 2021  9:49 AM,1 March 2021  9:52 AM,2 mins 22 secs,6.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00
+Arellano,Karen,NA,NA,karen.are_078@example.com,Finished,1 March 2021  9:50 AM,1 March 2021  9:53 AM,2 mins 56 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Cook,Tanner,NA,NA,tanner.coo_230@example.com,Finished,1 March 2021  9:50 AM,1 March 2021  9:58 AM,7 mins 25 secs,3.00,0.00,1.00,0.00,1.00,0.00,1.00,0.00,0.00,0.00
+Gutierrez Quezada,John,NA,NA,john.gut_102@example.com,Finished,1 March 2021  9:51 AM,1 March 2021  9:55 AM,4 mins 15 secs,5.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Barnes,Lourdes,NA,NA,lourdes.bar_167@example.com,Finished,1 March 2021  9:51 AM,1 March 2021  9:54 AM,2 mins 34 secs,4.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00
+Vang,Dominic,NA,NA,dominic.van_231@example.com,Finished,1 March 2021  9:53 AM,1 March 2021  10:05 AM,11 mins 32 secs,5.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,0.00
+Rupe,Brittney,NA,NA,brittney.rup_169@example.com,Finished,1 March 2021  9:54 AM,1 March 2021  9:59 AM,4 mins 50 secs,2.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00
+Bonser,Julius,NA,NA,julius.bon_089@example.com,Finished,1 March 2021  9:54 AM,1 March 2021  11:45 AM,1 hour 51 mins,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+Daigle,Donald,NA,NA,donald.dai_163@example.com,Finished,1 March 2021  9:54 AM,2 March 2021  1:18 AM,15 hours 24 mins,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Swick,Alexandria,NA,NA,alexandria.swi_183@example.com,Finished,1 March 2021  9:54 AM,1 March 2021  9:59 AM,4 mins 20 secs,4.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00
+Padua,Alfred,NA,NA,alfred.pad_238@example.com,Finished,1 March 2021  9:55 AM,1 March 2021  9:59 AM,4 mins 4 secs,4.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+Yazzie,Raylene,NA,NA,raylene.yaz_258@example.com,Finished,1 March 2021  9:55 AM,1 March 2021  9:58 AM,3 mins 13 secs,6.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Ramos,Joseph,NA,NA,joseph.ram_225@example.com,Finished,1 March 2021  9:55 AM,1 March 2021  10:00 AM,4 mins 46 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Perez,Christine,NA,NA,christine.per_137@example.com,Finished,1 March 2021  9:58 AM,1 March 2021  10:37 AM,38 mins 55 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Dickhausen,Hunter,NA,NA,hunter.dic_132@example.com,Finished,1 March 2021  9:58 AM,1 March 2021  9:59 AM,24 secs,2.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00
+Chhetry,Clayton,NA,NA,clayton.chh_228@example.com,Finished,1 March 2021  9:59 AM,1 March 2021  10:00 AM,25 secs,5.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00,0.00
+Awtrey,Kathryn,NA,NA,kathryn.awt_069@example.com,Finished,1 March 2021  10:01 AM,1 March 2021  10:07 AM,6 mins 20 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Swick,Alexandria,NA,NA,alexandria.swi_183@example.com,Finished,1 March 2021  10:02 AM,1 March 2021  10:05 AM,3 mins 3 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Pritchard,Amanda,NA,NA,amanda.pri_028@example.com,Finished,1 March 2021  10:02 AM,1 March 2021  11:31 AM,1 hour 28 mins,6.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Cutshaw,Michael,NA,NA,michael.cut_032@example.com,Finished,1 March 2021  10:02 AM,1 March 2021  10:34 AM,31 mins 22 secs,4.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,0.00
+Beyale,Zayyaan,NA,NA,zayyaan.bey_234@example.com,Finished,1 March 2021  10:06 AM,1 March 2021  10:10 AM,4 mins,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+Vang,Dominic,NA,NA,dominic.van_231@example.com,Finished,1 March 2021  10:06 AM,1 March 2021  10:07 AM,54 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Washington,Jocelyn,NA,NA,jocelyn.was_068@example.com,Finished,1 March 2021  10:08 AM,1 March 2021  10:09 AM,59 secs,0.00,0.00,-,-,-,-,-,-,-,-
+Washington,Jocelyn,NA,NA,jocelyn.was_068@example.com,Finished,1 March 2021  10:10 AM,1 March 2021  10:13 AM,2 mins 40 secs,8.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Beyale,Zayyaan,NA,NA,zayyaan.bey_234@example.com,Finished,1 March 2021  10:10 AM,1 March 2021  10:11 AM,56 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Washington,Jocelyn,NA,NA,jocelyn.was_068@example.com,Finished,1 March 2021  10:13 AM,1 March 2021  10:14 AM,32 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Aragon,Amanda,NA,NA,amanda.ara_189@example.com,In progress,1 March 2021  10:13 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Kiatoukaysi,Conner,NA,NA,conner.kia_126@example.com,Finished,1 March 2021  10:31 AM,1 March 2021  10:34 AM,2 mins 37 secs,2.00,0.00,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00
+Kiatoukaysi,Conner,NA,NA,conner.kia_126@example.com,Finished,1 March 2021  10:34 AM,1 March 2021  10:35 AM,47 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Kiatoukaysi,Conner,NA,NA,conner.kia_126@example.com,Finished,1 March 2021  10:35 AM,1 March 2021  10:36 AM,29 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Ramsey-White,Ashton,NA,NA,ashton.ram_152@example.com,Finished,1 March 2021  11:11 AM,1 March 2021  11:18 AM,6 mins 21 secs,3.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00
+Martin,Adriana,NA,NA,adriana.mar_240@example.com,Finished,1 March 2021  11:14 AM,1 March 2021  11:41 AM,26 mins 55 secs,7.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00
+Mason,"Ma,Roof",NA,NA,"ma,roof.mas_171@example.com",In progress,1 March 2021  11:26 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Ramsey-White,Ashton,NA,NA,ashton.ram_152@example.com,Finished,1 March 2021  11:28 AM,1 March 2021  11:29 AM,41 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Jamal,Joseph,NA,NA,joseph.el_024@example.com,Finished,1 March 2021  11:33 AM,1 March 2021  11:34 AM,1 min 47 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Pritchard,Amanda,NA,NA,amanda.pri_028@example.com,Finished,1 March 2021  11:33 AM,1 March 2021  11:46 AM,12 mins 22 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Safi,Carlos,NA,NA,carlos.el_100@example.com,Finished,1 March 2021  11:36 AM,1 March 2021  11:40 AM,3 mins 55 secs,6.00,1.00,1.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00
+el-Safi,Carlos,NA,NA,carlos.el_100@example.com,Finished,1 March 2021  11:41 AM,1 March 2021  11:42 AM,1 min 33 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Aydin,Tyler,NA,NA,tyler.al_192@example.com,Finished,1 March 2021  11:44 AM,1 March 2021  11:45 AM,49 secs,7.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00
+Marsh,Ariel,NA,NA,ariel.mar_088@example.com,Finished,1 March 2021  11:45 AM,1 March 2021  11:46 AM,1 min 3 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Bonser,Julius,NA,NA,julius.bon_089@example.com,Finished,1 March 2021  11:45 AM,1 March 2021  12:00 PM,14 mins 35 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Aydin,Tyler,NA,NA,tyler.al_192@example.com,Finished,1 March 2021  11:47 AM,1 March 2021  11:48 AM,1 min 16 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Valdez,Scott,NA,NA,scott.val_064@example.com,Finished,1 March 2021  11:54 AM,1 March 2021  11:58 AM,3 mins 58 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Yohannes,Daniel,NA,NA,daniel.yoh_249@example.com,Finished,1 March 2021  12:06 PM,1 March 2021  12:25 PM,18 mins 52 secs,7.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00
+Xiong,Saqib,NA,NA,saqib.xio_142@example.com,Finished,1 March 2021  12:08 PM,1 March 2021  12:37 PM,28 mins 13 secs,4.00,0.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,0.00
+Stickels,Vincenzo,NA,NA,vincenzo.sti_280@example.com,Finished,1 March 2021  12:15 PM,1 March 2021  12:32 PM,17 mins 26 secs,5.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Ellison,Connor,NA,NA,connor.ell_151@example.com,Finished,1 March 2021  12:23 PM,1 March 2021  12:31 PM,8 mins 17 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+Villafana,Raabiya,NA,NA,raabiya.vil_056@example.com,Finished,1 March 2021  12:26 PM,1 March 2021  12:36 PM,10 mins 13 secs,5.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00
+Yohannes,Daniel,NA,NA,daniel.yoh_249@example.com,Finished,1 March 2021  12:31 PM,1 March 2021  12:33 PM,1 min 33 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Ellison,Connor,NA,NA,connor.ell_151@example.com,Finished,1 March 2021  12:32 PM,1 March 2021  12:33 PM,1 min 3 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Stickels,Vincenzo,NA,NA,vincenzo.sti_280@example.com,Finished,1 March 2021  12:33 PM,1 March 2021  12:39 PM,5 mins 52 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Xiong,Saqib,NA,NA,saqib.xio_142@example.com,Finished,1 March 2021  12:39 PM,1 March 2021  12:40 PM,1 min 8 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Colten,Kevin,NA,NA,kevin.col_210@example.com,Finished,1 March 2021  12:46 PM,1 March 2021  12:51 PM,5 mins 27 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Hamady,December,NA,NA,december.al_006@example.com,Finished,1 March 2021  12:49 PM,1 March 2021  12:56 PM,6 mins 55 secs,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Colten,Kevin,NA,NA,kevin.col_210@example.com,Finished,1 March 2021  12:52 PM,1 March 2021  12:53 PM,36 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Odeh,Terry,NA,NA,terry.el_187@example.com,Finished,1 March 2021  12:54 PM,1 March 2021  12:58 PM,4 mins 28 secs,6.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Najar Madera,Aspen,NA,NA,aspen.naj_177@example.com,Finished,1 March 2021  12:59 PM,1 March 2021  1:25 PM,26 mins,3.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00
+el-Odeh,Terry,NA,NA,terry.el_187@example.com,Finished,1 March 2021  12:59 PM,1 March 2021  1:00 PM,38 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Martinez,Colin,NA,NA,colin.mar_057@example.com,Finished,1 March 2021  1:58 PM,1 March 2021  2:02 PM,4 mins 18 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Casas,Sidqi,NA,NA,sidqi.cas_186@example.com,Finished,1 March 2021  2:12 PM,1 March 2021  2:27 PM,15 mins 12 secs,6.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,0.00,1.00
+Casas,Sidqi,NA,NA,sidqi.cas_186@example.com,Finished,1 March 2021  2:27 PM,1 March 2021  2:33 PM,5 mins 16 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Goldman,Faun,NA,NA,faun.gol_179@example.com,Finished,1 March 2021  2:30 PM,1 March 2021  2:36 PM,5 mins 47 secs,5.00,1.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,0.00
+Cutshaw,Michael,NA,NA,michael.cut_032@example.com,Finished,1 March 2021  2:45 PM,1 March 2021  2:48 PM,2 mins 54 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Hughes,Davena,NA,NA,davena.hug_054@example.com,Finished,1 March 2021  2:52 PM,1 March 2021  3:10 PM,17 mins 27 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Pham,Kali,NA,NA,kali.pha_232@example.com,Finished,1 March 2021  3:28 PM,1 March 2021  3:30 PM,1 min 39 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Miah,Austin,NA,NA,austin.el_040@example.com,In progress,1 March 2021  3:32 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Orozco,Alexis,NA,NA,alexis.oro_270@example.com,Finished,1 March 2021  3:33 PM,2 March 2021  12:41 AM,9 hours 7 mins,5.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,1.00
+Cervantes,Celina,NA,NA,celina.cer_007@example.com,Finished,1 March 2021  3:37 PM,1 March 2021  3:54 PM,17 mins 1 sec,7.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,1.00
+Masters,Elena,NA,NA,elena.mas_014@example.com,Finished,1 March 2021  3:38 PM,1 March 2021  3:50 PM,12 mins 16 secs,4.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00
+Barbour,Julian,NA,NA,julian.bar_253@example.com,Finished,1 March 2021  3:39 PM,1 March 2021  3:51 PM,12 mins 3 secs,6.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,0.00
+Wilson,Puspa,NA,NA,puspa.wil_133@example.com,Finished,1 March 2021  3:39 PM,1 March 2021  3:40 PM,44 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Asebedo,Kristin,NA,NA,kristin.ase_067@example.com,Finished,1 March 2021  3:40 PM,1 March 2021  3:41 PM,1 min 11 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Shinault,Abdur Rahmaan,NA,NA,abdur rahmaan.shi_201@example.com,Finished,1 March 2021  3:41 PM,1 March 2021  3:51 PM,9 mins 59 secs,3.00,0.00,1.00,0.00,1.00,0.00,0.00,0.00,1.00,0.00
+el-Taha,Joshua,NA,NA,joshua.el_025@example.com,In progress,1 March 2021  3:42 PM,-,-,-,-,-,-,-,-,-,-,-,-
+al-Odeh,Muthanna,NA,NA,muthanna.al_222@example.com,Finished,1 March 2021  3:42 PM,1 March 2021  3:52 PM,9 mins 42 secs,5.00,0.00,1.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00
+Aguilar,Haaniya,NA,NA,haaniya.agu_206@example.com,Finished,1 March 2021  3:43 PM,1 March 2021  3:47 PM,3 mins 29 secs,5.00,1.00,0.00,0.00,1.00,1.00,1.00,0.00,0.00,1.00
+Aguilar,Haaniya,NA,NA,haaniya.agu_206@example.com,Finished,1 March 2021  3:49 PM,1 March 2021  3:51 PM,1 min 19 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Bunch,Natalie,NA,NA,natalie.bun_272@example.com,In progress,1 March 2021  3:50 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Shinault,Abdur Rahmaan,NA,NA,abdur rahmaan.shi_201@example.com,Finished,1 March 2021  3:51 PM,1 March 2021  3:52 PM,1 min 6 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00
+el-Vaziri,Ladonna,NA,NA,ladonna.el_242@example.com,Finished,1 March 2021  4:29 PM,1 March 2021  4:36 PM,7 mins 35 secs,7.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Garner,Brian,NA,NA,brian.gar_125@example.com,Finished,1 March 2021  4:59 PM,1 March 2021  5:11 PM,11 mins 21 secs,2.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Garner,Brian,NA,NA,brian.gar_125@example.com,In progress,1 March 2021  5:16 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Sorenson,Alexander,NA,NA,alexander.sor_226@example.com,Finished,1 March 2021  5:27 PM,1 March 2021  5:35 PM,7 mins 53 secs,7.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00
+Pena,Calley,NA,NA,calley.pen_200@example.com,Finished,1 March 2021  6:49 PM,1 March 2021  7:32 PM,43 mins 37 secs,6.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Smith,Aalyah,NA,NA,aalyah.smi_099@example.com,Finished,1 March 2021  7:31 PM,1 March 2021  8:18 PM,46 mins 37 secs,5.00,1.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00
+al-Odeh,Muthanna,NA,NA,muthanna.al_222@example.com,Finished,1 March 2021  7:33 PM,1 March 2021  7:33 PM,13 secs,1.00,1.00,0.00,-,-,-,-,-,-,-
+Krier,Jason,NA,NA,jason.kri_266@example.com,Finished,1 March 2021  8:29 PM,1 March 2021  8:48 PM,18 mins 29 secs,8.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Taylor,Linh,NA,NA,linh.tay_279@example.com,Finished,1 March 2021  8:58 PM,2 March 2021  9:52 AM,12 hours 54 mins,5.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00
+New,Markayla,NA,NA,markayla.new_017@example.com,Finished,1 March 2021  9:11 PM,1 March 2021  9:25 PM,13 mins 30 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00
+Calhoun,Anthony,NA,NA,anthony.cal_036@example.com,Finished,1 March 2021  9:16 PM,1 March 2021  9:16 PM,14 secs,1.00,1.00,-,-,-,-,-,-,-,-
+Hell,Muntaha,NA,NA,muntaha.hel_106@example.com,Finished,1 March 2021  9:20 PM,1 March 2021  9:32 PM,12 mins 21 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Stindt,Yoshi,NA,NA,yoshi.sti_209@example.com,Finished,1 March 2021  10:03 PM,1 March 2021  10:09 PM,6 mins 13 secs,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Hernandez-Lavalle,Sarah,NA,NA,sarah.her_147@example.com,Finished,1 March 2021  10:06 PM,1 March 2021  10:11 PM,5 mins 22 secs,7.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+Hernandez-Lavalle,Sarah,NA,NA,sarah.her_147@example.com,Finished,1 March 2021  10:12 PM,1 March 2021  10:12 PM,36 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Walters,Fidda,NA,NA,fidda.wal_263@example.com,Finished,1 March 2021  11:06 PM,1 March 2021  11:18 PM,11 mins 42 secs,7.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00
+Okubo,Mary,NA,NA,mary.oku_031@example.com,In progress,2 March 2021  1:13 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Chhetry,Clayton,NA,NA,clayton.chh_228@example.com,Finished,2 March 2021  1:16 AM,2 March 2021  1:33 AM,16 mins 40 secs,5.00,1.00,1.00,0.00,1.00,1.00,0.00,0.00,0.00,1.00
+Shah,Justina,NA,NA,justina.sha_013@example.com,Finished,2 March 2021  2:46 AM,2 March 2021  3:13 AM,26 mins 57 secs,5.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00
+el-Malak,Cody,NA,NA,cody.el_278@example.com,In progress,2 March 2021  3:35 AM,-,-,-,-,-,-,-,-,-,-,-,-
+Parsons,Chandler,NA,NA,chandler.par_159@example.com,Finished,2 March 2021  11:03 AM,2 March 2021  12:02 PM,59 mins 4 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Vongphackdy,John,NA,NA,john.von_180@example.com,Finished,2 March 2021  11:03 AM,2 March 2021  12:00 PM,57 mins 22 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Masih,Danielle,NA,NA,danielle.al_101@example.com,Finished,2 March 2021  11:07 AM,2 March 2021  11:20 AM,13 mins 3 secs,6.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+al-Amini,Calley,NA,NA,calley.al_271@example.com,Finished,2 March 2021  11:09 AM,2 March 2021  11:22 AM,13 mins 19 secs,4.00,0.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00
+al-Amini,Calley,NA,NA,calley.al_271@example.com,Finished,2 March 2021  11:22 AM,2 March 2021  11:24 AM,1 min 52 secs,8.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00
+al-Amini,Calley,NA,NA,calley.al_271@example.com,Finished,2 March 2021  11:26 AM,2 March 2021  11:32 AM,6 mins 22 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Myers,Jesus,NA,NA,jesus.mye_220@example.com,Finished,2 March 2021  11:40 AM,2 March 2021  2:17 PM,2 hours 36 mins,7.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00
+Davis,Dustin,NA,NA,dustin.dav_023@example.com,Finished,2 March 2021  12:48 PM,2 March 2021  1:15 PM,27 mins 9 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Patilla,Erica,NA,NA,erica.pat_265@example.com,Finished,2 March 2021  12:48 PM,2 March 2021  12:56 PM,7 mins 14 secs,6.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,0.00
+Hintz,Zaaida,NA,NA,zaaida.hin_071@example.com,Finished,2 March 2021  1:53 PM,2 March 2021  1:59 PM,6 mins 24 secs,6.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00,0.00,1.00
+Hintz,Zaaida,NA,NA,zaaida.hin_071@example.com,Finished,2 March 2021  2:00 PM,2 March 2021  2:01 PM,1 min 23 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Myers,Jesus,NA,NA,jesus.mye_220@example.com,Finished,2 March 2021  2:19 PM,2 March 2021  2:21 PM,1 min 6 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Reed,Stephen,NA,NA,stephen.ree_061@example.com,Finished,2 March 2021  2:36 PM,2 March 2021  2:43 PM,7 mins 3 secs,6.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,1.00
+Yazzie,Raylene,NA,NA,raylene.yaz_258@example.com,Finished,2 March 2021  3:56 PM,2 March 2021  4:01 PM,4 mins 47 secs,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Yazzie,Raylene,NA,NA,raylene.yaz_258@example.com,Finished,2 March 2021  4:03 PM,2 March 2021  4:03 PM,52 secs,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Yazzie,Raylene,NA,NA,raylene.yaz_258@example.com,Finished,2 March 2021  4:04 PM,2 March 2021  4:04 PM,41 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Zaher,Dominique,NA,NA,dominique.al_224@example.com,Finished,2 March 2021  4:06 PM,2 March 2021  4:12 PM,5 mins 39 secs,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Orozco,Alexis,NA,NA,alexis.oro_270@example.com,Finished,2 March 2021  4:13 PM,2 March 2021  4:18 PM,4 mins 47 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Castaneda,Saleema,NA,NA,saleema.cas_156@example.com,Finished,2 March 2021  4:23 PM,2 March 2021  4:26 PM,2 mins 25 secs,6.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00
+al-Hosein,Ryan,NA,NA,ryan.al_193@example.com,Finished,2 March 2021  4:25 PM,2 March 2021  4:41 PM,16 mins 19 secs,8.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Ozer,Johnny,NA,NA,johnny.al_015@example.com,In progress,2 March 2021  5:40 PM,-,-,-,-,-,-,-,-,-,-,-,-
+Jennings,Julio,NA,NA,julio.jen_176@example.com,Finished,2 March 2021  5:46 PM,2 March 2021  5:53 PM,7 mins 3 secs,5.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00
+Jennings,Julio,NA,NA,julio.jen_176@example.com,Finished,2 March 2021  5:54 PM,2 March 2021  5:56 PM,1 min 19 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Murphy,Jawhara,NA,NA,jawhara.mur_105@example.com,In progress,2 March 2021  6:06 PM,-,-,-,-,-,-,-,-,-,-,-,-
+al-Kaiser,Brianna,NA,NA,brianna.al_154@example.com,Finished,2 March 2021  6:54 PM,2 March 2021  6:59 PM,4 mins 49 secs,5.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00
+al-Kaiser,Brianna,NA,NA,brianna.al_154@example.com,Finished,2 March 2021  6:59 PM,2 March 2021  7:02 PM,2 mins 21 secs,5.00,1.00,1.00,0.00,0.00,1.00,0.00,1.00,0.00,1.00
+al-Kaiser,Brianna,NA,NA,brianna.al_154@example.com,Finished,2 March 2021  7:02 PM,2 March 2021  7:04 PM,1 min 28 secs,7.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,1.00
+al-Kaiser,Brianna,NA,NA,brianna.al_154@example.com,Finished,2 March 2021  7:04 PM,2 March 2021  7:05 PM,1 min 21 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Antobre,Lubna,NA,NA,lubna.ant_065@example.com,Finished,2 March 2021  8:22 PM,2 March 2021  8:30 PM,8 mins 32 secs,5.00,1.00,0.00,0.00,1.00,1.00,0.00,1.00,0.00,1.00
+Page,Brandon,NA,NA,brandon.pag_041@example.com,Finished,2 March 2021  8:23 PM,2 March 2021  8:32 PM,8 mins 25 secs,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Hurd,Ayla,NA,NA,ayla.hur_127@example.com,Finished,2 March 2021  8:27 PM,2 March 2021  8:36 PM,9 mins 21 secs,5.00,1.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,0.00
+Montano,Rozell,NA,NA,rozell.mon_145@example.com,Finished,2 March 2021  8:27 PM,2 March 2021  8:45 PM,18 mins,8.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Castro,Gianni,NA,NA,gianni.cas_093@example.com,Finished,2 March 2021  8:46 PM,2 March 2021  8:51 PM,4 mins 27 secs,5.00,1.00,1.00,0.00,1.00,0.00,0.00,1.00,0.00,1.00
+Castro,Gianni,NA,NA,gianni.cas_093@example.com,Finished,2 March 2021  8:52 PM,2 March 2021  8:53 PM,53 secs,8.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00
+Castro,Gianni,NA,NA,gianni.cas_093@example.com,Finished,2 March 2021  8:53 PM,2 March 2021  8:54 PM,26 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Yousef,Jenny,NA,NA,jenny.el_277@example.com,Finished,2 March 2021  9:15 PM,2 March 2021  10:02 PM,46 mins 53 secs,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Alferez,Seiko,NA,NA,seiko.alf_247@example.com,Finished,2 March 2021  9:32 PM,2 March 2021  9:46 PM,13 mins 28 secs,5.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,0.00
+Bell,Nathan,NA,NA,nathan.bel_241@example.com,Finished,2 March 2021  10:07 PM,2 March 2021  10:16 PM,9 mins 7 secs,4.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,0.00
+al-Amen,Iyonna,NA,NA,iyonna.al_168@example.com,Finished,2 March 2021  10:07 PM,2 March 2021  10:14 PM,6 mins 57 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Wong,Jasmine,NA,NA,jasmine.won_207@example.com,Finished,2 March 2021  10:16 PM,2 March 2021  10:20 PM,3 mins 33 secs,6.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00
+Eriacho,Gavin,NA,NA,gavin.eri_001@example.com,Finished,2 March 2021  10:25 PM,2 March 2021  10:32 PM,6 mins 54 secs,8.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00
+Bell,Nathan,NA,NA,nathan.bel_241@example.com,Finished,2 March 2021  10:28 PM,2 March 2021  10:32 PM,3 mins 51 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Connelly,Taamir,NA,NA,taamir.con_077@example.com,Finished,2 March 2021  11:04 PM,2 March 2021  11:15 PM,11 mins 10 secs,5.00,0.00,1.00,0.00,1.00,1.00,1.00,0.00,1.00,0.00
+Connelly,Taamir,NA,NA,taamir.con_077@example.com,Finished,2 March 2021  11:16 PM,2 March 2021  11:17 PM,54 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Ayoub,Faun,NA,NA,faun.al_260@example.com,Finished,2 March 2021  11:31 PM,2 March 2021  11:49 PM,17 mins 9 secs,7.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00
+Benally,Maile,NA,NA,maile.ben_198@example.com,Finished,2 March 2021  11:46 PM,3 March 2021  12:03 AM,16 mins 15 secs,6.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Martinez,Ghaaliya,NA,NA,ghaaliya.mar_048@example.com,Finished,2 March 2021  11:47 PM,3 March 2021  12:03 AM,16 mins 41 secs,7.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00
+Acord,Corbin,NA,NA,corbin.aco_248@example.com,Finished,3 March 2021  12:20 AM,3 March 2021  12:25 AM,5 mins 50 secs,4.00,1.00,1.00,0.00,0.00,1.00,0.00,1.00,0.00,0.00
+Acord,Corbin,NA,NA,corbin.aco_248@example.com,Finished,3 March 2021  12:27 AM,3 March 2021  12:28 AM,49 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+el-Salahuddin,Zachary,NA,NA,zachary.el_199@example.com,Finished,3 March 2021  12:38 AM,3 March 2021  12:46 AM,7 mins 54 secs,4.00,1.00,0.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00
+el-Salahuddin,Zachary,NA,NA,zachary.el_199@example.com,Finished,3 March 2021  12:49 AM,3 March 2021  12:52 AM,2 mins 52 secs,5.00,1.00,1.00,0.00,1.00,0.00,1.00,0.00,1.00,0.00
+Lam,Ritika,NA,NA,ritika.lam_076@example.com,Finished,3 March 2021  3:10 AM,3 March 2021  3:14 AM,4 mins 6 secs,4.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00,0.00,0.00
+Rietveld,Saqib,NA,NA,saqib.rie_148@example.com,Finished,3 March 2021  6:09 AM,3 March 2021  6:20 AM,11 mins 15 secs,5.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00,0.00,1.00
+Rietveld,Saqib,NA,NA,saqib.rie_148@example.com,Finished,3 March 2021  6:23 AM,3 March 2021  6:24 AM,1 min 13 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Rietveld,Saqib,NA,NA,saqib.rie_148@example.com,Finished,3 March 2021  6:41 AM,3 March 2021  6:41 AM,21 secs,0.00,-,-,-,-,-,-,-,-,-
+Yang,Zachary,NA,NA,zachary.yan_182@example.com,Finished,3 March 2021  9:27 AM,3 March 2021  9:30 AM,3 mins 3 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+al-Habib,Lawrence,NA,NA,lawrence.al_203@example.com,Finished,3 March 2021  10:43 AM,3 March 2021  10:44 AM,1 min 3 secs,6.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,1.00
+al-Habib,Lawrence,NA,NA,lawrence.al_203@example.com,Finished,3 March 2021  10:45 AM,3 March 2021  10:47 AM,2 mins 24 secs,9.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+Overall average,NA,NA,NA,NA,NA,NA,NA,NA,5.90,0.68,0.85,0.40,0.72,0.62,0.57,0.79,0.60,0.67
