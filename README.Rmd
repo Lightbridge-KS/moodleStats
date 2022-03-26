@@ -16,11 +16,12 @@ knitr::opts_chunk$set(
 # moodleStats
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/Lightbridge-KS/moodleStats/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Lightbridge-KS/moodleStats/actions/workflows/R-CMD-check.yaml)
+
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![R-CMD-check](https://github.com/Lightbridge-KS/moodleStats/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Lightbridge-KS/moodleStats/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
-The goal of moodleStats is to ...
+> A high-level R package for quiz & questions analysis of [Moodle Grades Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report)
 
 ## Installation
 
@@ -31,6 +32,81 @@ You can install the development version of moodleStats from [GitHub](https://git
 remotes::install_github("Lightbridge-KS/moodleStats")
 ```
 
-## Example 
+## Goal
 
-To be continued...
+The goal of this package it to provide a high-level functions for analysis of [Moodle Grades Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report) such as calculation of **descriptive statistics** for quiz & questions, and performingan **item analysis**.
+
+## Quick Workflow
+
+```{r load-pkg}
+library(moodleStats)
+```
+
+### Read Data
+
+Read Moodle Grades Report from `.csv` file into a Data Frame.
+
+```{r grades_df}
+grades_df <- readr::read_csv(moodleStats_example("grades_report.csv"))
+```
+
+```{r}
+dplyr::glimpse(grades_df)
+```
+
+### Prepare Data
+
+Cleaning and filtering data can be done in 1 step using `prep_grades_report()`
+
+```{r grades_df_preped}
+grades_df_preped <- prep_grades_report(grades_df,
+                                       choose_state = "Finished", # 1. choose only "Finished" attempt
+                                       choose_grade = "max", # 2. choose only the best score of each student
+                                       choose_time = "first" # 3. choose the first time that student submitted
+                                       ) 
+dplyr::glimpse(grades_df_preped)
+```
+
+### Quiz Metadata
+
+Show quiz metadata such as maximum settings of quiz and questions by `quiz_meta()`
+
+```{r grades_df_meta}
+quiz_meta(grades_df_preped)
+```
+
+### Quiz Summary
+
+`summary_quiz()` calculates various quiz summary statistics, and combine it into 1 row data frame.
+
+```{r quiz_report_df}
+quiz_report_df <- summary_quiz(grades_df_preped)
+dplyr::glimpse(quiz_report_df)
+```
+
+### Question Summary and Item Analysis
+
+```{r question_report_df}
+question_report_df <- summary_questions(grades_df_preped)
+```
+
+Here is summary statistics for each questions.
+
+```{r}
+question_report_df %>% 
+  dplyr::select(Questions:SD)
+```
+
+And, here is an **item analysis** for Moodle Grades Report.
+
+-   **`Difficulty_Index`** is for **Item Difficulty Index (p)**, a measure of the *proportion* of examinees who answered the item correctly.
+-   **`Discrimination_Index`** is for **Item Discrimination Index (r)**, a measure of how well an item is able to distinguish between examinees who are knowledgeable and those who are not. It is a pairwise *point-biserial correlation* between the score of each questions and total score of the quiz.
+
+```{r}
+question_report_df %>% 
+  dplyr::select(Questions, Difficulty_Index:p.value)
+```
+
+------------------------------------------------------------------------
+
+Last updated: `r format(Sys.time(), '%d %B %Y')`
