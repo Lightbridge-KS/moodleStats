@@ -11,13 +11,15 @@
 #'
 #' @details
 #' Steps to prepare a [Moodle Grades Report](https://docs.moodle.org/311/en/Quiz_reports) data frame:
-#' * Clean some column names
-#' * Join "First name" and "Surname" by `sep_name`
-#' * Format "Grade/x.xx" column to numeric ("Not yet graded" and "-" will be `NA`)
-#' * Format "Q. x /x.xx" column to numeric ("Requires grading" and "-" will be `NA`)
-#' * Filter a "State" column by `choose_state`
-#' * Filter a "Grade" column by `choose_grade` (after `choose_state` has been applied)
-#' * Filter a "Started on" or "Started" column by `choose_time` (after `choose_grade` has been applied)
+#' * Clean some column names.
+#' * Get rid of the last row which contains "Overall average".
+#' * Join "First name" and "Surname" into "Name" by `sep_name`.
+#' * Format "Grade/x.xx" column to numeric ("Not yet graded" and "-" will be `NA`).
+#' * Format "Q. x /x.xx" column to numeric ("Requires grading" and "-" will be `NA`).
+#' * Rename and format `Started on` to `Started` column with "POSIXct" class.
+#' * Filter a "State" column by `choose_state`.
+#' * Filter a "Grade" column by `choose_grade` (after `choose_state` has been applied).
+#' * Filter a "Started on" or "Started" column by `choose_time` (after `choose_grade` has been applied).
 #'
 #'
 #' @param data (Data Frame) A data frame of [Moodle Grades Report](https://docs.moodle.org/311/en/Quiz_reports)
@@ -31,8 +33,8 @@
 #' * \strong{min:} choose attempts that has minimum score of each students
 #' * \strong{all:} no filter applied, choose all attempts.
 #' @param choose_time (Character) Options to filter a "Started on" or "Started" column, must be one of:
-#' * \strong{first:} (default) choose first attempt of each students
-#' * \strong{last:} choose last attempt of each students
+#' * \strong{first:} (default) choose the first attempt of each students
+#' * \strong{last:} choose the last attempt of each students
 #' * \strong{all:} no filter applied, choose all attempts.
 #'
 #' @return A cleaned and (optionally) filtered data frame with class "GradesReport" and "MoodleQuizReport".

@@ -33,8 +33,8 @@ prep_grades_report(
 
 \item{choose_time}{(Character) Options to filter a "Started on" or "Started" column, must be one of:
 \itemize{
-\item \strong{first:} (default) choose first attempt of each students
-\item \strong{last:} choose last attempt of each students
+\item \strong{first:} (default) choose the first attempt of each students
+\item \strong{last:} choose the last attempt of each students
 \item \strong{all:} no filter applied, choose all attempts.
 }}
 }
@@ -48,13 +48,15 @@ for further analysis (see \strong{Details}).
 \details{
 Steps to prepare a \href{https://docs.moodle.org/311/en/Quiz_reports}{Moodle Grades Report} data frame:
 \itemize{
-\item Clean some column names
-\item Join "First name" and "Surname" by \code{sep_name}
-\item Format "Grade/x.xx" column to numeric ("Not yet graded" and "-" will be \code{NA})
-\item Format "Q. x /x.xx" column to numeric ("Requires grading" and "-" will be \code{NA})
-\item Filter a "State" column by \code{choose_state}
-\item Filter a "Grade" column by \code{choose_grade} (after \code{choose_state} has been applied)
-\item Filter a "Started on" or "Started" column by \code{choose_time} (after \code{choose_grade} has been applied)
+\item Clean some column names.
+\item Get rid of the last row which contains "Overall average".
+\item Join "First name" and "Surname" into "Name" by \code{sep_name}.
+\item Format "Grade/x.xx" column to numeric ("Not yet graded" and "-" will be \code{NA}).
+\item Format "Q. x /x.xx" column to numeric ("Requires grading" and "-" will be \code{NA}).
+\item Rename and format \verb{Started on} to \code{Started} column with "POSIXct" class.
+\item Filter a "State" column by \code{choose_state}.
+\item Filter a "Grade" column by \code{choose_grade} (after \code{choose_state} has been applied).
+\item Filter a "Started on" or "Started" column by \code{choose_time} (after \code{choose_grade} has been applied).
 }
 }
 \examples{
