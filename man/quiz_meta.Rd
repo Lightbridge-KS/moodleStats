@@ -24,3 +24,10 @@ and maximum score possible of each question (if it is a Moodle Grades Report).
 this will show what filters have been applied to the data frame.
 }
 }
+\examples{
+# Quiz Settings
+quiz_meta(grades_df)
+# Quiz Settings with Filtering
+grades_df_preped <- prep_grades_report(grades_df)
+quiz_meta(grades_df_preped)
+}

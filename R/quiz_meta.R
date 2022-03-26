@@ -16,6 +16,11 @@
 #' @export
 #'
 #' @examples
+#' # Quiz Settings
+#' quiz_meta(grades_df)
+#' # Quiz Settings with Filtering
+#' grades_df_preped <- prep_grades_report(grades_df)
+#' quiz_meta(grades_df_preped)
 quiz_meta <- function(data) {
 
   q_meta <- list(
