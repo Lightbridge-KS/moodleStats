@@ -1,0 +1,211 @@
+---
+title: "moodleStats"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{moodleStats}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(moodleStats)
+library(dplyr)
+library(readr)
+```
+
+## Read Data
+
+`{moodleStats}` comes with a raw example data for **Moodle Grades Report** in a `CSV` file. Here is the steps to read that data into R.
+
+1.  Get path to the example data by `moodleStats_example()`.
+
+2.  Read `grades_report.csv` into a data frame. I will use `readr::read_csv()`.
+
+```{r grades_df}
+# Get path to `grades_report.csv`
+path <- moodleStats_example("grades_report.csv")
+
+# Read to a Data Frame
+grades_df <- readr::read_csv(path)
+```
+
+## Things to consider
+
+`grades_df` is a Moodle Grades Report that has `r nrow(grades_df)` rows and `r ncol(grades_df)` columns. Let's see an overview picture of this data frame using `dplyr::glimpse()`.
+
+```{r}
+glimpse(grades_df)
+```
+
+As you can see from above, there are couple of things that **need cleaning** before working with this data in `R`.
+
+### Need to clean
+
+**Spaces in column names**, we will have to remove them.
+
+**Too many metadata in the column names**, for example:
+
+    -   In `Grade/9.00` column, the setting of quiz maximum grades (9.00).
+
+    -   In `Q. 1 /1.00` to `Q. 9 /1.00`, the setting of question's maximum score (1.00).
+
+These metadata (quiz maximum grades and question's maximum score) should be *removed* from the column names, and store it in another data structure that I will present to you later.
+
+**Date-Time formatting** in `Started on` and `Completed` column; however, this package only use `Started on` column.
+
+**Numeric value formatting** in `Grade/9.00` and `Q.*` columns. Some characters need to be converted to `NA` such as "-" in this example.
+
+Last row of `grades_df` contains an "Overall average".
+
+```{r}
+grades_df[nrow(grades_df), ]
+```
+
+It's convenient that Moodle provide brief summary of average quiz grades and question's scores for teachers, but we don't need that because `{moodleStats}` already provides a function to calculate quiz and question statistics which I'll show you later.
+
+**Therefore, the last row will be removed.**
+
+Lastly, the first name and last name of students are in `First name` and `Surname` column, which is OK. However, If we were to perform a data transformation grouping by each student, we would have to write code to group by 2 variables.
+
+For convenience sake, joining `First name` and `Surname` into a *single* column (i.e., `Name`) can be more easier to work with, as I'll show you later.
+
+### Filtering attempts
+
+Quiz setting in the Moodle of `grades_df` allows student to submit answers multiple times (i.e., unlimited attempts).
+
+If we count student attempts we can see that many students do quiz multiple times.
+
+```{r}
+grades_df %>% 
+  count(`First name`, Surname, State, sort = TRUE) %>% 
+  head()
+```
+
+If some observation (row) is *duplicated*, and we calculate statistics based these, we would get somewhat bias result.
+
+Therefore, `{moodleStats}` will provide a method to **filter rows** by quiz status, grades, and started time of each student in order to obtain a *unique* observation for every rows.
+
+## Prepare Data
+
+Previously, I've listed the things that needs to be done, `{moodleStats}` provides a function to do all that.
+
+**`grades_df_preped()`** will do the followings:
+
+**Cleaning**
+
+-   Clean some column names.
+
+-   Remove the last row which contains "Overall average"
+
+-   Join `First name` and `Surname` into `Name` column by a separator (`sep_name`)
+
+-   Format `Grade/9.00` and `Q.*` columns to numeric, and any "-", "Requires grading", and "Not yet graded" will converted to `NA`.
+
+-   Rename and format `Started on` to `Started` column with "POSIXct" class
+
+**Filtering**
+
+Filters will be applied in this order.
+
+1.  **Filter quiz status** (`State`) by **`choose_state`** argument.
+
+    -   "Finished": (default) choose only submitted attempts
+
+    -   "In progress": choose only non-submitted attempts
+
+    -   "all": choose all attempts (no filter)
+
+2.  **Filter student grades** (`Grade`) by **`choose_grade`** argument.
+
+    -   "max": (default) choose attempts that has *maximum* score of each students
+
+    -   "min": choose attempts that has *minimum* score of each students
+
+    -   "all": choose all attempts (no filter)
+
+3.  **Filter started time** (`Started`) by **`choose_time`** argument.
+
+    -   "first": (default) choose the *first* attempt of each students
+
+    -   "last": choose the *last* attempt of each students
+
+    -   "all": choose all attempts (no filter)
+
+In the example below, I call `prep_grades_report()` with arguments to filter the first submitted attempt that has a maximum score of each student.
+
+```{r grades_df_preped}
+grades_df_preped <- prep_grades_report(grades_df,
+                                       sep_name = " ",
+                                       choose_state = "Finished",
+                                       choose_grade = "max",
+                                       choose_time = "first")
+glimpse(grades_df_preped)
+```
+
+In `grades_df_preped`, the column names are cleaned, columns types are formatted properly, and missing values `NA` are assigned as previously described.
+
+Also, student names are *unique* in every rows, no duplication.
+
+```{r}
+any(duplicated(grades_df_preped$Name))
+```
+
+## Quiz Metadata
+
+Now that column names has been cleaned, How can we get maximum settings of quiz and questions?
+
+**`quiz_meta()`** can obtain that quiz settings and filtering record that performed previously. The result will nicely printed to R console.
+
+```{r grades_df_meta}
+grades_df_meta <- quiz_meta(grades_df_preped)
+grades_df_meta
+```
+
+Underneath, It is just a **list** so you can subset them later as desired.
+
+```{r}
+# Maximum score of each questions
+grades_df_meta$quiz_setting$questions_max
+```
+
+## Quiz Summary
+
+Now that we have prepared our data, It's time to calculate **quiz summary statistics**.
+
+**`summary_quiz()`** calculates various quiz summary statistics, and combine it into 1 row data frame.
+
+```{r quiz_report_df}
+quiz_report_df <- summary_quiz(grades_df_preped)
+
+glimpse(quiz_report_df)
+```
+
+## Question Summary & Item Analysis
+
+Lastly, we can perform an item analysis and calculate statistics for each questions in the quiz.
+
+```{r question_report_df}
+question_report_df <- summary_questions(grades_df_preped)
+names(question_report_df)
+```
+
+### Summary Stats of Questions
+
+```{r}
+question_report_df %>% 
+  select(Questions:SD)
+```
+
+### Item Analysis
+
+```{r}
+question_report_df %>% 
+  select(Questions, Difficulty_Index:p.value)
+```
