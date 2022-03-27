@@ -36,8 +36,8 @@ summarise_stats_var <- function(data,
     n = rlang::expr(sum(!is.na(!!var))),
     min = rlang::expr(min(!!var, na.rm = TRUE)),
     max = rlang::expr(max(!!var, na.rm = TRUE)),
-    median = rlang::expr(stats::median(!!var, na.rm = TRUE)),
     Q1 = rlang::expr(stats::quantile(!!var, 0.25, na.rm = TRUE)),
+    median = rlang::expr(stats::median(!!var, na.rm = TRUE)),
     Q3 = rlang::expr(stats::quantile(!!var, 0.75, na.rm = TRUE)),
     IQR = rlang::expr(stats::IQR(!!var, na.rm = TRUE)),
     MAD = rlang::expr(stats::mad(!!var, na.rm = TRUE)),
@@ -61,3 +61,5 @@ summarise_stats_var <- function(data,
   summary_row %>%
     purrr::modify(~round(.x, digits = round_digits))
 }
+
+
