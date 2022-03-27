@@ -14,10 +14,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, message=FALSE}
 library(moodleStats)
 library(dplyr)
-library(readr)
 ```
 
 ## Read Data
@@ -28,7 +27,7 @@ library(readr)
 
 2.  Read `grades_report.csv` into a data frame. I will use `readr::read_csv()`.
 
-```{r grades_df}
+```{r grades_df, message=FALSE}
 # Get path to `grades_report.csv`
 path <- moodleStats_example("grades_report.csv")
 
@@ -52,9 +51,9 @@ As you can see from above, there are couple of things that **need cleaning** bef
 
 **Too many metadata in the column names**, for example:
 
-    -   In `Grade/9.00` column, the setting of quiz maximum grades (9.00).
+-   In `Grade/9.00` column, the setting of quiz maximum grades (9.00).
 
-    -   In `Q. 1 /1.00` to `Q. 9 /1.00`, the setting of question's maximum score (1.00).
+-   In `Q. 1 /1.00` to `Q. 9 /1.00`, the setting of question's maximum score (1.00).
 
 These metadata (quiz maximum grades and question's maximum score) should be *removed* from the column names, and store it in another data structure that I will present to you later.
 
@@ -209,3 +208,7 @@ question_report_df %>%
 question_report_df %>% 
   select(Questions, Difficulty_Index:p.value)
 ```
+
+------------------------------------------------------------------------
+
+Last updated: `r format(Sys.time(), '%d %B %Y')`
