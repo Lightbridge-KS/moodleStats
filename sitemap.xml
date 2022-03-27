@@ -22,10 +22,7 @@
     <loc>https://lightbridge-ks.github.io/moodleStats/index.html</loc>
   </url>
   <url>
-    <loc>https://lightbridge-ks.github.io/moodleStats/reference/get_setting_grade_max.html</loc>
-  </url>
-  <url>
-    <loc>https://lightbridge-ks.github.io/moodleStats/reference/get_setting_questions_no_max.html</loc>
+    <loc>https://lightbridge-ks.github.io/moodleStats/news/index.html</loc>
   </url>
   <url>
     <loc>https://lightbridge-ks.github.io/moodleStats/reference/grades_df.html</loc>
@@ -47,9 +44,6 @@
   </url>
   <url>
     <loc>https://lightbridge-ks.github.io/moodleStats/reference/prep_grades_report.html</loc>
-  </url>
-  <url>
-    <loc>https://lightbridge-ks.github.io/moodleStats/reference/print_messages.html</loc>
   </url>
   <url>
     <loc>https://lightbridge-ks.github.io/moodleStats/reference/questions_stats.html</loc>

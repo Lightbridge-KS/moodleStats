@@ -41,6 +41,9 @@
 <li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
+<li class="nav-item">
+  <a class="nav-link" href="../news/index.html">Changelog</a>
+</li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
@@ -76,16 +79,7 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/Lightbridge-KS/moodleStats" class="external-link">moodleStats</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Attaching package: 'dplyr'</span>
-<span class="co">#&gt; The following objects are masked from 'package:stats':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     filter, lag</span>
-<span class="co">#&gt; The following objects are masked from 'package:base':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     intersect, setdiff, setequal, union</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://readr.tidyverse.org" class="external-link">readr</a></span><span class="op">)</span></code></pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></code></pre></div>
 <div class="section level2">
 <h2 id="read-data">Read Data<a class="anchor" aria-label="anchor" href="#read-data"></a>
 </h2>
@@ -99,15 +93,7 @@
 <span class="va">path</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/moodleStats_example.html">moodleStats_example</a></span><span class="op">(</span><span class="st">"grades_report.csv"</span><span class="op">)</span>
 
 <span class="co"># Read to a Data Frame</span>
-<span class="va">grades_df</span> <span class="op">&lt;-</span> <span class="fu">readr</span><span class="fu">::</span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="va">path</span><span class="op">)</span>
-<span class="co">#&gt; <span style="font-weight: bold;">Rows: </span><span style="color: #0000BB;">461</span> <span style="font-weight: bold;">Columns: </span><span style="color: #0000BB;">19</span></span>
-<span class="co">#&gt; <span style="color: #00BBBB;">──</span> <span style="font-weight: bold;">Column specification</span> <span style="color: #00BBBB;">────────────────────────────────────────────────────────</span></span>
-<span class="co">#&gt; <span style="font-weight: bold;">Delimiter:</span> ","</span>
-<span class="co">#&gt; <span style="color: #BB0000;">chr</span> (17): Surname, First name, Email address, State, Started on, Completed, ...</span>
-<span class="co">#&gt; <span style="color: #BBBB00;">lgl</span>  (2): Institution, Department</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Use `spec()` to retrieve the full column specification for this data.</span>
-<span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></code></pre></div>
+<span class="va">grades_df</span> <span class="op">&lt;-</span> <span class="fu">readr</span><span class="fu">::</span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="va">path</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="things-to-consider">Things to consider<a class="anchor" aria-label="anchor" href="#things-to-consider"></a>
@@ -142,14 +128,15 @@
 </h3>
 <p><strong>Spaces in column names</strong>, we will have to remove them.</p>
 <p><strong>Too many metadata in the column names</strong>, for example:</p>
-<pre><code>-   In `Grade/9.00` column, the setting of quiz maximum grades (9.00).
-
--   In `Q. 1 /1.00` to `Q. 9 /1.00`, the setting of question's maximum score (1.00).</code></pre>
+<ul>
+<li><p>In <code>Grade/9.00</code> column, the setting of quiz maximum grades (9.00).</p></li>
+<li><p>In <code>Q. 1 /1.00</code> to <code>Q. 9 /1.00</code>, the setting of question’s maximum score (1.00).</p></li>
+</ul>
 <p>These metadata (quiz maximum grades and question’s maximum score) should be <em>removed</em> from the column names, and store it in another data structure that I will present to you later.</p>
 <p><strong>Date-Time formatting</strong> in <code>Started on</code> and <code>Completed</code> column; however, this package only use <code>Started on</code> column.</p>
 <p><strong>Numeric value formatting</strong> in <code>Grade/9.00</code> and <code>Q.*</code> columns. Some characters need to be converted to <code>NA</code> such as “-” in this example.</p>
 <p>Last row of <code>grades_df</code> contains an “Overall average”.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">)</span>, <span class="op">]</span>
 <span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 19</span></span>
 <span class="co">#&gt;   Surname `First name` Institution Department `Email address` State `Started on`</span>
@@ -170,7 +157,7 @@
 </h3>
 <p>Quiz setting in the Moodle of <code>grades_df</code> allows student to submit answers multiple times (i.e., unlimited attempts).</p>
 <p>If we count student attempts we can see that many students do quiz multiple times.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">`First name`</span>, <span class="va">Surname</span>, <span class="va">State</span>, sort <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span>
@@ -229,7 +216,7 @@
 </li>
 </ol>
 <p>In the example below, I call <code><a href="../reference/prep_grades_report.html">prep_grades_report()</a></code> with arguments to filter the first submitted attempt that has a maximum score of each student.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df_preped</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/prep_grades_report.html">prep_grades_report</a></span><span class="op">(</span><span class="va">grades_df</span>,
                                        sep_name <span class="op">=</span> <span class="st">" "</span>,
                                        choose_state <span class="op">=</span> <span class="st">"Finished"</span>,
@@ -256,7 +243,7 @@
 <span class="co">#&gt; $ Q9          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1…</span></code></pre></div>
 <p>In <code>grades_df_preped</code>, the column names are cleaned, columns types are formatted properly, and missing values <code>NA</code> are assigned as previously described.</p>
 <p>Also, student names are <em>unique</em> in every rows, no duplication.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/any.html" class="external-link">any</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/duplicated.html" class="external-link">duplicated</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">$</span><span class="va">Name</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; [1] FALSE</span></code></pre></div>
 </div>
@@ -265,7 +252,7 @@
 </h2>
 <p>Now that column names has been cleaned, How can we get maximum settings of quiz and questions?</p>
 <p><strong><code><a href="../reference/quiz_meta.html">quiz_meta()</a></code></strong> can obtain that quiz settings and filtering record that performed previously. The result will nicely printed to R console.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df_meta</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/quiz_meta.html">quiz_meta</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
 <span class="va">grades_df_meta</span>
 <span class="co">#&gt; </span>
@@ -284,7 +271,7 @@
 <span class="co">#&gt;   2. Choose <span style="color: #00BB00;">max</span> grades of each students.</span>
 <span class="co">#&gt;   3. Choose <span style="color: #00BB00;">first</span> attempt(s) of each student by 'Started on' column.</span></code></pre></div>
 <p>Underneath, It is just a <strong>list</strong> so you can subset them later as desired.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Maximum score of each questions</span>
 <span class="va">grades_df_meta</span><span class="op">$</span><span class="va">quiz_setting</span><span class="op">$</span><span class="va">questions_max</span>
 <span class="co">#&gt; Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 </span>
@@ -295,7 +282,7 @@
 </h2>
 <p>Now that we have prepared our data, It’s time to calculate <strong>quiz summary statistics</strong>.</p>
 <p><strong><code><a href="../reference/summary_quiz.html">summary_quiz()</a></code></strong> calculates various quiz summary statistics, and combine it into 1 row data frame.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">quiz_report_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/summary_quiz.html">summary_quiz</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
 
 <span class="fu"><a href="https://dplyr.tidyverse.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">quiz_report_df</span><span class="op">)</span>
@@ -320,7 +307,7 @@
 <h2 id="question-summary-item-analysis">Question Summary &amp; Item Analysis<a class="anchor" aria-label="anchor" href="#question-summary-item-analysis"></a>
 </h2>
 <p>Lastly, we can perform an item analysis and calculate statistics for each questions in the quiz.</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">question_report_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/summary_questions.html">summary_questions</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">question_report_df</span><span class="op">)</span>
 <span class="co">#&gt;  [1] "Questions"            "n"                    "min"                 </span>
@@ -330,7 +317,7 @@
 <div class="section level3">
 <h3 id="summary-stats-of-questions">Summary Stats of Questions<a class="anchor" aria-label="anchor" href="#summary-stats-of-questions"></a>
 </h3>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">question_report_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Questions</span><span class="op">:</span><span class="va">SD</span><span class="op">)</span>
 <span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 7</span></span>
@@ -349,7 +336,7 @@
 <div class="section level3">
 <h3 id="item-analysis">Item Analysis<a class="anchor" aria-label="anchor" href="#item-analysis"></a>
 </h3>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">question_report_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Questions</span>, <span class="va">Difficulty_Index</span><span class="op">:</span><span class="va">p.value</span><span class="op">)</span>
 <span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 4</span></span>
@@ -364,6 +351,8 @@
 <span class="co">#&gt; <span style="color: #BCBCBC;">7</span> Q7                   0.870                0.554 4.86<span style="color: #949494;">e</span><span style="color: #BB0000;">-23</span></span>
 <span class="co">#&gt; <span style="color: #BCBCBC;">8</span> Q8                   0.708                0.640 3.59<span style="color: #949494;">e</span><span style="color: #BB0000;">-32</span></span>
 <span class="co">#&gt; <span style="color: #BCBCBC;">9</span> Q9                   0.737                0.597 1.81<span style="color: #949494;">e</span><span style="color: #BB0000;">-27</span></span></code></pre></div>
+<hr>
+<p>Last updated: 27 March 2022</p>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
