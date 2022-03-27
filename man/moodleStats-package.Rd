@@ -12,6 +12,7 @@ This package contain funtions that perform analyis of moodle quiz report to get 
 Useful links:
 \itemize{
   \item \url{https://github.com/Lightbridge-KS/moodleStats}
+  \item \url{https://lightbridge-ks.github.io/moodleStats/}
   \item Report bugs at \url{https://github.com/Lightbridge-KS/moodleStats/issues}
 }
 
