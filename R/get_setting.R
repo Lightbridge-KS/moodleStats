@@ -14,6 +14,7 @@
 #' @param df_raw A data.frame of Moodle Quiz report
 #'
 #' @return Numeric vector of length 1 indicate maximum quiz grade
+#' @noRd
 #'
 get_setting_grade_max <- function(df_raw) {
 
@@ -37,6 +38,7 @@ get_setting_grade_max <- function(df_raw) {
 #' @param df_gr A data.frame of Moodle Grades report
 #'
 #' @return A numeric vector represents maximum score of each questions
+#' @noRd
 #'
 get_setting_questions_no_max <- function(df_gr) {
 

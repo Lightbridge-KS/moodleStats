@@ -9,6 +9,7 @@
 #' @param suffix Suffix of each character elements
 #'
 #' @return A message
+#' @noRd
 #'
 print_messages <- function(x, sep = "\n", prefix = "", suffix = "") {
 
