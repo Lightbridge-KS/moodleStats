@@ -98,34 +98,37 @@
 <div class="section level2">
 <h2 id="things-to-consider">Things to consider<a class="anchor" aria-label="anchor" href="#things-to-consider"></a>
 </h2>
-<p><code>grades_df</code> is a Moodle Grades Report that has 461 rows and 19 columns. Let’s see an overview picture of this data frame using <code><a href="https://dplyr.tidyverse.org/reference/glimpse.html" class="external-link">dplyr::glimpse()</a></code>.</p>
+<p><code>grades_df</code> is a Moodle Grades Report that has 461 rows and 19 columns. Let’s see an overview of this data frame.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://dplyr.tidyverse.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">)</span>
-<span class="co">#&gt; Rows: 461</span>
-<span class="co">#&gt; Columns: 19</span>
-<span class="co">#&gt; $ Surname         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "el-Taha", "al-Aydin", "Sawyer", "Snow", "al-Habib", "…</span>
-<span class="co">#&gt; $ `First name`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Joshua", "Tyler", "Michael", "Leeah", "Lawrence", "Is…</span>
-<span class="co">#&gt; $ Institution     <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…</span>
-<span class="co">#&gt; $ Department      <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…</span>
-<span class="co">#&gt; $ `Email address` <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "joshua.el_025@example.com", "tyler.al_192@example.com…</span>
-<span class="co">#&gt; $ State           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Finished", "Finished", "In progress", "Finished", "Fi…</span>
-<span class="co">#&gt; $ `Started on`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "12 February 2021  1:03 PM", "12 February 2021  3:36 P…</span>
-<span class="co">#&gt; $ Completed       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1 March 2021  3:35 AM", "28 February 2021  10:53 PM",…</span>
-<span class="co">#&gt; $ `Time taken`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "16 days 14 hours", "16 days 7 hours", "-", "6 days 5 …</span>
-<span class="co">#&gt; $ `Grade/9.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "5.00", "8.00", "-", "9.00", "6.00", "6.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 1 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1.00", "1.00", "-", "1.00", "1.00", "0.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 2 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1.00", "1.00", "-", "1.00", "1.00", "1.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 3 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "0.00", "0.00", "-", "1.00", "0.00", "0.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 4 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "0.00", "1.00", "-", "1.00", "1.00", "1.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 5 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1.00", "1.00", "-", "1.00", "0.00", "1.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 6 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "0.00", "1.00", "-", "1.00", "1.00", "0.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 7 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1.00", "1.00", "-", "1.00", "1.00", "1.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 8 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1.00", "1.00", "-", "1.00", "0.00", "1.00", "-", "0.0…</span>
-<span class="co">#&gt; $ `Q. 9 /1.00`    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "0.00", "1.00", "-", "1.00", "1.00", "1.00", "-", "0.0…</span></code></pre></div>
-<p>As you can see from above, there are couple of things that <strong>need cleaning</strong> before working with this data in <code>R</code>.</p>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 19</span></span>
+<span class="co">#&gt;   Surname `First name` Institution Department `Email address` State `Started on`</span>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> el-Taha Joshua       <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         joshua.el_025@… Fini… 12 February…</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> al-Ayd… Tyler        <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         tyler.al_192@e… Fini… 12 February…</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Sawyer  Michael      <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         michael.saw_24… In p… 16 February…</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Snow    Leeah        <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         leeah.sno_016@… Fini… 21 February…</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">5</span> al-Hab… Lawrence     <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         lawrence.al_20… Fini… 22 February…</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">6</span> el-Sal… Isaiah       <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         isaiah.el_140@… Fini… 23 February…</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 12 more variables: Completed &lt;chr&gt;, `Time taken` &lt;chr&gt;,</span></span>
+<span class="co">#&gt; <span style="color: #949494;">#   `Grade/9.00` &lt;chr&gt;, `Q. 1 /1.00` &lt;chr&gt;, `Q. 2 /1.00` &lt;chr&gt;,</span></span>
+<span class="co">#&gt; <span style="color: #949494;">#   `Q. 3 /1.00` &lt;chr&gt;, `Q. 4 /1.00` &lt;chr&gt;, `Q. 5 /1.00` &lt;chr&gt;,</span></span>
+<span class="co">#&gt; <span style="color: #949494;">#   `Q. 6 /1.00` &lt;chr&gt;, `Q. 7 /1.00` &lt;chr&gt;, `Q. 8 /1.00` &lt;chr&gt;,</span></span>
+<span class="co">#&gt; <span style="color: #949494;">#   `Q. 9 /1.00` &lt;chr&gt;</span></span></code></pre></div>
+<p>There are couple of things that <strong>need cleaning</strong> before working with this data in <code>R</code>.</p>
 <div class="section level3">
 <h3 id="need-to-clean">Need to clean<a class="anchor" aria-label="anchor" href="#need-to-clean"></a>
 </h3>
+<div class="section level4">
+<h4 id="column-names">Column Names<a class="anchor" aria-label="anchor" href="#column-names"></a>
+</h4>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">)</span>
+<span class="co">#&gt;  [1] "Surname"       "First name"    "Institution"   "Department"   </span>
+<span class="co">#&gt;  [5] "Email address" "State"         "Started on"    "Completed"    </span>
+<span class="co">#&gt;  [9] "Time taken"    "Grade/9.00"    "Q. 1 /1.00"    "Q. 2 /1.00"   </span>
+<span class="co">#&gt; [13] "Q. 3 /1.00"    "Q. 4 /1.00"    "Q. 5 /1.00"    "Q. 6 /1.00"   </span>
+<span class="co">#&gt; [17] "Q. 7 /1.00"    "Q. 8 /1.00"    "Q. 9 /1.00"</span></code></pre></div>
 <p><strong>Spaces in column names</strong>, we will have to remove them.</p>
 <p><strong>Too many metadata in the column names</strong>, for example:</p>
 <ul>
@@ -133,10 +136,29 @@
 <li><p>In <code>Q. 1 /1.00</code> to <code>Q. 9 /1.00</code>, the setting of question’s maximum score (1.00).</p></li>
 </ul>
 <p>These metadata (quiz maximum grades and question’s maximum score) should be <em>removed</em> from the column names, and store it in another data structure that I will present to you later.</p>
+</div>
+<div class="section level4">
+<h4 id="column-formatting">Column Formatting<a class="anchor" aria-label="anchor" href="#column-formatting"></a>
+</h4>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">grades_df</span><span class="op">$</span><span class="va">`Started on`</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>
+<span class="co">#&gt; [1] "12 February 2021  1:03 PM"</span>
+<span class="va">grades_df</span><span class="op">$</span><span class="va">Completed</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>
+<span class="co">#&gt; [1] "1 March 2021  3:35 AM"</span></code></pre></div>
 <p><strong>Date-Time formatting</strong> in <code>Started on</code> and <code>Completed</code> column; however, this package only use <code>Started on</code> column.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">$</span><span class="va">`Grade/9.00`</span><span class="op">)</span>
+<span class="co">#&gt;  [1] "5.00" "8.00" "-"    "9.00" "6.00" "0.00" "7.00" "4.00" "2.00" "3.00"</span>
+<span class="co">#&gt; [11] "1.00" "5.90"</span>
+<span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">$</span><span class="va">`Q. 1 /1.00`</span><span class="op">)</span>
+<span class="co">#&gt; [1] "1.00" "-"    "0.00" "0.68"</span></code></pre></div>
 <p><strong>Numeric value formatting</strong> in <code>Grade/9.00</code> and <code>Q.*</code> columns. Some characters need to be converted to <code>NA</code> such as “-” in this example.</p>
+</div>
+<div class="section level4">
+<h4 id="last-row">Last Row<a class="anchor" aria-label="anchor" href="#last-row"></a>
+</h4>
 <p>Last row of <code>grades_df</code> contains an “Overall average”.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">grades_df</span><span class="op">)</span>, <span class="op">]</span>
 <span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 19</span></span>
 <span class="co">#&gt;   Surname `First name` Institution Department `Email address` State `Started on`</span>
@@ -152,12 +174,13 @@
 <p>Lastly, the first name and last name of students are in <code>First name</code> and <code>Surname</code> column, which is OK. However, If we were to perform a data transformation grouping by each student, we would have to write code to group by 2 variables.</p>
 <p>For convenience sake, joining <code>First name</code> and <code>Surname</code> into a <em>single</em> column (i.e., <code>Name</code>) can be more easier to work with, as I’ll show you later.</p>
 </div>
+</div>
 <div class="section level3">
 <h3 id="filtering-attempts">Filtering attempts<a class="anchor" aria-label="anchor" href="#filtering-attempts"></a>
 </h3>
 <p>Quiz setting in the Moodle of <code>grades_df</code> allows student to submit answers multiple times (i.e., unlimited attempts).</p>
 <p>If we count student attempts we can see that many students do quiz multiple times.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">`First name`</span>, <span class="va">Surname</span>, <span class="va">State</span>, sort <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span>
@@ -216,34 +239,32 @@
 </li>
 </ol>
 <p>In the example below, I call <code><a href="../reference/prep_grades_report.html">prep_grades_report()</a></code> with arguments to filter the first submitted attempt that has a maximum score of each student.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df_preped</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/prep_grades_report.html">prep_grades_report</a></span><span class="op">(</span><span class="va">grades_df</span>,
                                        sep_name <span class="op">=</span> <span class="st">" "</span>,
                                        choose_state <span class="op">=</span> <span class="st">"Finished"</span>,
                                        choose_grade <span class="op">=</span> <span class="st">"max"</span>,
                                        choose_time <span class="op">=</span> <span class="st">"first"</span><span class="op">)</span>
-<span class="fu"><a href="https://dplyr.tidyverse.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
-<span class="co">#&gt; Rows: 272</span>
-<span class="co">#&gt; Columns: 16</span>
-<span class="co">#&gt; $ Name        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Joshua el-Taha", "Leeah Snow", "Isaiah el-Saleem", "Eric …</span>
-<span class="co">#&gt; $ Institution <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…</span>
-<span class="co">#&gt; $ Department  <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…</span>
-<span class="co">#&gt; $ Email       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "joshua.el_025@example.com", "leeah.sno_016@example.com", …</span>
-<span class="co">#&gt; $ State       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Finished", "Finished", "Finished", "Finished", "Finished"…</span>
-<span class="co">#&gt; $ Started     <span style="color: #949494; font-style: italic;">&lt;dttm&gt;</span> 2021-02-12 13:03:00, 2021-02-21 20:09:00, 2021-02-23 19:5…</span>
-<span class="co">#&gt; $ Grade       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 5, 9, 6, 0, 7, 4, 2, 5, 6, 8, 8, 3, 3, 5, 8, 9, 0, 5, 5, 7…</span>
-<span class="co">#&gt; $ Q1          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0…</span>
-<span class="co">#&gt; $ Q2          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1…</span>
-<span class="co">#&gt; $ Q3          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1…</span>
-<span class="co">#&gt; $ Q4          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1…</span>
-<span class="co">#&gt; $ Q5          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0…</span>
-<span class="co">#&gt; $ Q6          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1…</span>
-<span class="co">#&gt; $ Q7          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1…</span>
-<span class="co">#&gt; $ Q8          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1…</span>
-<span class="co">#&gt; $ Q9          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1…</span></code></pre></div>
+<span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
+<span class="co">#&gt;  [1] "Name"        "Institution" "Department"  "Email"       "State"      </span>
+<span class="co">#&gt;  [6] "Started"     "Grade"       "Q1"          "Q2"          "Q3"         </span>
+<span class="co">#&gt; [11] "Q4"          "Q5"          "Q6"          "Q7"          "Q8"         </span>
+<span class="co">#&gt; [16] "Q9"</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 16</span></span>
+<span class="co">#&gt;   Name  Institution Department Email State Started             Grade    Q1    Q2</span>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dttm&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Josh… <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         josh… Fini… 2021-02-12 <span style="color: #949494;">13:03:00</span>     5     1     1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Leea… <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         leea… Fini… 2021-02-21 <span style="color: #949494;">20:09:00</span>     9     1     1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Isai… <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         isai… Fini… 2021-02-23 <span style="color: #949494;">19:51:00</span>     6     0     1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Eric… <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         eric… Fini… 2021-02-23 <span style="color: #949494;">21:57:00</span>     0     0     0</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Euge… <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         euge… Fini… 2021-02-24 <span style="color: #949494;">12:25:00</span>     7     1     1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Anni… <span style="color: #BB0000;">NA</span>          <span style="color: #BB0000;">NA</span>         anni… Fini… 2021-02-25 <span style="color: #949494;">01:39:00</span>     4     0     1</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 7 more variables: Q3 &lt;dbl&gt;, Q4 &lt;dbl&gt;, Q5 &lt;dbl&gt;, Q6 &lt;dbl&gt;, Q7 &lt;dbl&gt;,</span></span>
+<span class="co">#&gt; <span style="color: #949494;">#   Q8 &lt;dbl&gt;, Q9 &lt;dbl&gt;</span></span></code></pre></div>
 <p>In <code>grades_df_preped</code>, the column names are cleaned, columns types are formatted properly, and missing values <code>NA</code> are assigned as previously described.</p>
 <p>Also, student names are <em>unique</em> in every rows, no duplication.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/any.html" class="external-link">any</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/duplicated.html" class="external-link">duplicated</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">$</span><span class="va">Name</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; [1] FALSE</span></code></pre></div>
 </div>
@@ -252,7 +273,7 @@
 </h2>
 <p>Now that column names has been cleaned, How can we get maximum settings of quiz and questions?</p>
 <p><strong><code><a href="../reference/quiz_meta.html">quiz_meta()</a></code></strong> can obtain that quiz settings and filtering record that performed previously. The result will nicely printed to R console.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">grades_df_meta</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/quiz_meta.html">quiz_meta</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
 <span class="va">grades_df_meta</span>
 <span class="co">#&gt; </span>
@@ -271,7 +292,7 @@
 <span class="co">#&gt;   2. Choose <span style="color: #00BB00;">max</span> grades of each students.</span>
 <span class="co">#&gt;   3. Choose <span style="color: #00BB00;">first</span> attempt(s) of each student by 'Started on' column.</span></code></pre></div>
 <p>Underneath, It is just a <strong>list</strong> so you can subset them later as desired.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Maximum score of each questions</span>
 <span class="va">grades_df_meta</span><span class="op">$</span><span class="va">quiz_setting</span><span class="op">$</span><span class="va">questions_max</span>
 <span class="co">#&gt; Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 </span>
@@ -282,32 +303,49 @@
 </h2>
 <p>Now that we have prepared our data, It’s time to calculate <strong>quiz summary statistics</strong>.</p>
 <p><strong><code><a href="../reference/summary_quiz.html">summary_quiz()</a></code></strong> calculates various quiz summary statistics, and combine it into 1 row data frame.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">quiz_report_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/summary_quiz.html">summary_quiz</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
 
-<span class="fu"><a href="https://dplyr.tidyverse.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">quiz_report_df</span><span class="op">)</span>
-<span class="co">#&gt; Rows: 1</span>
-<span class="co">#&gt; Columns: 14</span>
-<span class="co">#&gt; $ n              <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 272</span>
-<span class="co">#&gt; $ min            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0</span>
-<span class="co">#&gt; $ max            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 9</span>
-<span class="co">#&gt; $ max_quiz       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 9</span>
-<span class="co">#&gt; $ median         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 7</span>
-<span class="co">#&gt; $ Q1             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 5</span>
-<span class="co">#&gt; $ Q3             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 9</span>
-<span class="co">#&gt; $ IQR            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 4</span>
-<span class="co">#&gt; $ MAD            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2.9652</span>
-<span class="co">#&gt; $ mean           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 6.702206</span>
-<span class="co">#&gt; $ SD             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2.219403</span>
-<span class="co">#&gt; $ skewness       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> -0.883699</span>
-<span class="co">#&gt; $ kurtosis       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.07821787</span>
-<span class="co">#&gt; $ Cronbach_Alpha <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.7400243</span></code></pre></div>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">quiz_report_df</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 14</span></span>
+<span class="co">#&gt;       n   min   max max_quiz    Q1 median    Q3   IQR   MAD  mean    SD skewness</span>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span>   272     0     9        9     5      7     9     4  2.97  6.70  2.22   -<span style="color: #BB0000;">0.884</span></span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 2 more variables: kurtosis &lt;dbl&gt;, Cronbach_Alpha &lt;dbl&gt;</span></span></code></pre></div>
+<p>All of these parameters were calculated from total quiz scores (<code>Grade</code> column) of each students except for <code>Cronbach_Alpha</code> which use all questions scores (<code>Q</code> columns), and <code>max_quiz</code> is a maximum score <em>possible</em> of this quiz.</p>
+<p>For interpretation of these parameters, please visit <a href="https://lightbridge-ks.github.io/moodleStats/reference/summary_quiz.html"><code>summary_quiz()</code></a> documentation.</p>
+<div class="section level3">
+<h3 id="plot-quiz-score">Plot Quiz Score<a class="anchor" aria-label="anchor" href="#plot-quiz-score"></a>
+</h3>
+<p>Let’s plot a histogram of quiz score using <a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></p>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span>
+<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme_get.html" class="external-link">theme_set</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">grades_df_preped</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">Grade</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html" class="external-link">geom_histogram</a></span><span class="op">(</span>binwidth <span class="op">=</span> <span class="fl">0.5</span>, fill <span class="op">=</span> <span class="st">"darkblue"</span>, alpha <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span> <span class="op">+</span>
+  
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="va">quiz_report_df</span><span class="op">$</span><span class="va">mean</span>, color <span class="op">=</span> <span class="st">"maroon"</span>, lty <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/annotate.html" class="external-link">annotate</a></span><span class="op">(</span><span class="st">"label"</span>, 
+           x <span class="op">=</span> <span class="va">quiz_report_df</span><span class="op">$</span><span class="va">mean</span>, y <span class="op">=</span> <span class="fl">70</span>,
+           label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"mean = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">quiz_report_df</span><span class="op">$</span><span class="va">mean</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>breaks <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html" class="external-link">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">10</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Quiz Score Distribution"</span>, 
+       caption  <span class="op">=</span> <span class="st">"Note: multiple attempts quiz, choose the best score of each students."</span>,
+       y <span class="op">=</span> <span class="st">"Number of Students"</span><span class="op">)</span></code></pre></div>
+<p><img src="moodleStats_files/figure-html/plot-hist-1.png" width="700"></p>
+<p>The plot shows that the distribution is non-Gaussian which has its tails on the left side, corresponding to the <strong>negative skew</strong> that we’ve calculated (skewness = -0.88), also this distribution has quite a bit of outliers with the <strong>kurtosis</strong> of 0.08</p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="question-summary-item-analysis">Question Summary &amp; Item Analysis<a class="anchor" aria-label="anchor" href="#question-summary-item-analysis"></a>
 </h2>
-<p>Lastly, we can perform an item analysis and calculate statistics for each questions in the quiz.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<p><strong><code><a href="../reference/summary_questions.html">summary_questions()</a></code></strong> calculates various question summary statistics and item analysis into a data frame.</p>
+<p>Let’s see what parameters we can get.</p>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">question_report_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/summary_questions.html">summary_questions</a></span><span class="op">(</span><span class="va">grades_df_preped</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">question_report_df</span><span class="op">)</span>
 <span class="co">#&gt;  [1] "Questions"            "n"                    "min"                 </span>
@@ -317,7 +355,8 @@
 <div class="section level3">
 <h3 id="summary-stats-of-questions">Summary Stats of Questions<a class="anchor" aria-label="anchor" href="#summary-stats-of-questions"></a>
 </h3>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<p>Descriptive statistics of each questions are in the data frame from column <code>n</code> to <code>SD</code></p>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">question_report_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Questions</span><span class="op">:</span><span class="va">SD</span><span class="op">)</span>
 <span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 7</span></span>
@@ -336,7 +375,8 @@
 <div class="section level3">
 <h3 id="item-analysis">Item Analysis<a class="anchor" aria-label="anchor" href="#item-analysis"></a>
 </h3>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<p>Parameters of item analysis are <code>Difficulty_Index</code> and <code>Discrimination_Index</code>.</p>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">question_report_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Questions</span>, <span class="va">Difficulty_Index</span><span class="op">:</span><span class="va">p.value</span><span class="op">)</span>
 <span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 4</span></span>
@@ -351,6 +391,105 @@
 <span class="co">#&gt; <span style="color: #BCBCBC;">7</span> Q7                   0.870                0.554 4.86<span style="color: #949494;">e</span><span style="color: #BB0000;">-23</span></span>
 <span class="co">#&gt; <span style="color: #BCBCBC;">8</span> Q8                   0.708                0.640 3.59<span style="color: #949494;">e</span><span style="color: #BB0000;">-32</span></span>
 <span class="co">#&gt; <span style="color: #BCBCBC;">9</span> Q9                   0.737                0.597 1.81<span style="color: #949494;">e</span><span style="color: #BB0000;">-27</span></span></code></pre></div>
+<ul>
+<li><p><strong>Item Difficulty Index (p)</strong> (<code>Difficulty_Index</code>) is a measure of the <em>proportion</em> of examinees who answered the item correctly. It ranges between 0.0 and 1.0, higher value indicate lower question difficulty, and vice versa.</p></li>
+<li><p><strong>Item Discrimination Index (r)</strong> (<code>Discrimination_Index</code>) is a measure of how well an item is able to <em>distinguish</em> between examinees who are knowledgeable and those who are not. It is a pairwise <em>point-biserial correlation</em> between the score of each questions and total score of the quiz. It range between -1.0 to 1.0. Negative values suggest a problem, indicating that sco e of the particular question is negatively correlated with total quiz score; therefore, <em>revision</em> of the question is suggested.</p></li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li><p><code>p.value</code> is a level of significant of <code>Discrimination_Index</code></p></li>
+<li><p>How to interpret item analysis <a href="https://www.proftesting.com/test_topics/steps_9.php" class="external-link">see this</a>.</p></li>
+</ul>
+<p>Data visualization often delivers insight more naturally. Let’s make some plots for item analysis!</p>
+</div>
+<div class="section level3">
+<h3 id="plot-questions-score">Plot Question’s Score<a class="anchor" aria-label="anchor" href="#plot-questions-score"></a>
+</h3>
+<p>Let’s plot a distribution of each question’s score. I think that violin plot will be a good one in this case.</p>
+<p>But first, we need to transform <code>grades_df_preped</code> to a long format.</p>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">grades_df_long</span> <span class="op">&lt;-</span> <span class="va">grades_df_preped</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="co"># Select Q1 to Q9 columns</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html" class="external-link">starts_with</a></span><span class="op">(</span><span class="st">"Q"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="co"># Pivot to long</span>
+  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_longer.html" class="external-link">pivot_longer</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html" class="external-link">starts_with</a></span><span class="op">(</span><span class="st">"Q"</span><span class="op">)</span>, names_to <span class="op">=</span> <span class="st">"Questions"</span>, values_to <span class="op">=</span> <span class="st">"Mark"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="co"># Calculate mean of each questions</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">Questions</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>Mark_mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">Mark</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span>
+
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">grades_df_long</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 3</span></span>
+<span class="co">#&gt;   Questions  Mark Mark_mean</span>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Q1            1     0.760</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Q2            1     0.941</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Q3            0     0.511</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Q4            0     0.822</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Q5            1     0.743</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Q6            0     0.684</span></code></pre></div>
+<p>And then let’s plot !</p>
+<p>I will put questions in x-axis, and distribution of score in y-axis.</p>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">grades_df_long</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">Questions</span>, <span class="va">Mark</span>, color <span class="op">=</span> <span class="va">Mark_mean</span>, fill <span class="op">=</span> <span class="va">Mark_mean</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="co"># Violins</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_violin.html" class="external-link">geom_violin</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.3</span>, show.legend <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="op">+</span>
+  <span class="co"># Dots</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/stat_summary.html" class="external-link">stat_summary</a></span><span class="op">(</span>fun <span class="op">=</span> <span class="va">mean</span>, geom <span class="op">=</span> <span class="st">'point'</span>, show.legend <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="op">+</span>
+
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html" class="external-link">scale_fill_viridis_c</a></span><span class="op">(</span>option <span class="op">=</span> <span class="st">"plasma"</span>, end <span class="op">=</span> <span class="fl">0.8</span>, begin <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html" class="external-link">scale_color_viridis_c</a></span><span class="op">(</span>option <span class="op">=</span> <span class="st">"plasma"</span>, end <span class="op">=</span> <span class="fl">0.8</span>, begin <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">+</span>
+  
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Questions"</span>, y <span class="op">=</span> <span class="st">"Mark"</span>, 
+       title <span class="op">=</span> <span class="st">"Question's Score Distribution"</span>, 
+       caption <span class="op">=</span> <span class="st">"Points indicate question's mean score"</span><span class="op">)</span> </code></pre></div>
+<p><img src="moodleStats_files/figure-html/unnamed-chunk-13-1.png" width="700"></p>
+<p>Note that the <em>points</em> is the plots above is <strong>question’s mean scores</strong>, which, in this case, is <em>equal</em> to <code>Difficulty_Index</code>.</p>
+<p>(Because, <strong>Item Difficulty Index (p)</strong> is calculated by <em>mean score of each questions</em> divided by its range. For this example, every questions have a maximum score of <strong>1</strong>, so it is equal to mean score of each questions.)</p>
+</div>
+<div class="section level3">
+<h3 id="plot-item-discrimination-vs-item-difficulty">Plot Item Discrimination vs Item Difficulty<a class="anchor" aria-label="anchor" href="#plot-item-discrimination-vs-item-difficulty"></a>
+</h3>
+<p>Let’s make some text scatter plot with <code>Discrimination_Index</code> in x-axis and <code>1 - Difficulty_Index</code> in y-axis.</p>
+<p>I will use the <code>Difficulty_Level</code> to represent <code>1 - Difficulty_Index</code> and I will call discriminative power for <code>Discrimination_Index</code>.</p>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">question_report_df</span> <span class="op">&lt;-</span> <span class="va">question_report_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>Difficulty_Level <span class="op">=</span> <span class="fl">1</span> <span class="op">-</span> <span class="va">Difficulty_Index</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">question_report_df</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">Discrimination_Index</span>, <span class="va">Difficulty_Level</span>, 
+             color <span class="op">=</span> <span class="va">Difficulty_Level</span><span class="op">*</span><span class="va">Discrimination_Index</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html" class="external-link">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">Questions</span><span class="op">)</span>, show.legend <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="op">+</span>
+  
+  <span class="co">#scale_y_reverse() +</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/expand_limits.html" class="external-link">expand_limits</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Question's difficulty vs discrimination"</span>,
+       x <span class="op">=</span> <span class="op">(</span><span class="st">"Discrimination Index (r)"</span><span class="op">)</span>,
+       y <span class="op">=</span> <span class="op">(</span><span class="st">"Difficulty Level (1 - p)"</span><span class="op">)</span><span class="op">)</span> </code></pre></div>
+<p><img src="moodleStats_files/figure-html/unnamed-chunk-15-1.png" width="700"></p>
+<p>This plot shows the difficulty level (1 - p) and discriminative power (r) for each questions in one picture.</p>
+<p>As we move from the lower-left corner to the upper-right corner of the graph, the difficulty level and discrimination index for questions increases.</p>
+<p>By looking at this graph, It seems to me that there are <em>positive correlation</em> between these 2 variables, the more difficult the questions are, the more discriminative power.</p>
+<p>Let’s verify this assumption.</p>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.test.html" class="external-link">cor.test</a></span><span class="op">(</span><span class="va">question_report_df</span><span class="op">$</span><span class="va">Difficulty_Level</span>,
+                <span class="va">question_report_df</span><span class="op">$</span><span class="va">Discrimination_Index</span>,
+                method <span class="op">=</span> <span class="st">"pearson"</span><span class="op">)</span>
+<span class="va">res</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;  Pearson's product-moment correlation</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; data:  question_report_df$Difficulty_Level and question_report_df$Discrimination_Index</span>
+<span class="co">#&gt; t = 1.7297, df = 7, p-value = 0.1273</span>
+<span class="co">#&gt; alternative hypothesis: true correlation is not equal to 0</span>
+<span class="co">#&gt; 95 percent confidence interval:</span>
+<span class="co">#&gt;  -0.1836639  0.8884527</span>
+<span class="co">#&gt; sample estimates:</span>
+<span class="co">#&gt;      cor </span>
+<span class="co">#&gt; 0.547203</span></code></pre></div>
+<p>The report show that there is a <strong>positive correlation</strong> (<span class="math inline">\(r\)</span> = 0.547) between difficulty level (1 - p) and discriminative power (r) of questions, although it is <em>not</em> statistically significant (p-value = 0.127).</p>
 <hr>
 <p>Last updated: 27 March 2022</p>
 </div>
