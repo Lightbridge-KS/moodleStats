@@ -1,4 +1,36 @@
 url: https://lightbridge-ks.github.io/moodleStats/
 template:
   bootstrap: 5
+  bootswatch: lumen #simplex
 
+
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github]
+
+
+reference:
+- subtitle: Prepare Data
+  contents:
+  - '`prep_grades_report`'
+
+- subtitle: Quiz Summary
+  contents:
+  - '`summary_quiz`'
+
+- subtitle: Question Summary
+  contents:
+  - '`summary_questions`'
+  - '`questions_stats`'
+  - '`item_discrim`'
+
+- subtitle: Quiz Metadata
+  contents:
+  - '`quiz_meta`'
+
+- subtitle: Example Data
+  contents:
+  - '`grades_df`'
+  - '`moodleStats_example`'
