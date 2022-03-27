@@ -14,7 +14,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 > A high-level R package for quiz & questions analysis of [Moodle Grades
 > Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report)
 
-## Installation
+# Installation
 
 You can install the development version of moodleStats from
 [GitHub](https://github.com/) with:
@@ -24,7 +24,7 @@ You can install the development version of moodleStats from
 remotes::install_github("Lightbridge-KS/moodleStats")
 ```
 
-## Goal
+# Goal
 
 The goal of this package it to provide a high-level functions for
 analysis of [Moodle Grades
@@ -32,13 +32,13 @@ Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report) such
 as calculation of **descriptive statistics** for quiz & questions, and
 performingan **item analysis**.
 
-## Quick Workflow
+# Workflow
 
 ``` r
 library(moodleStats)
 ```
 
-### Read Data
+## Read Data
 
 Read Moodle Grades Report from `.csv` file into a Data Frame.
 
@@ -71,7 +71,7 @@ head(grades_df)
 #> #   Q. 8 /1.00 <chr>, Q. 9 /1.00 <chr>
 ```
 
-### Prepare Data
+## Prepare Data
 
 Cleaning and filtering data can be done in 1 step using
 `prep_grades_report()`
@@ -96,7 +96,7 @@ head(grades_df_preped)
 #> #   Q8 <dbl>, Q9 <dbl>
 ```
 
-### Quiz Metadata
+## Quiz Metadata
 
 Show quiz metadata such as maximum settings of quiz and questions by
 `quiz_meta()`
@@ -120,7 +120,7 @@ quiz_meta(grades_df_preped)
 #>   3. Choose first attempt(s) of each student by 'Started on' column.
 ```
 
-### Quiz Summary
+## Quiz Summary
 
 `summary_quiz()` calculates various quiz summary statistics, and combine
 it into 1 row data frame.
@@ -135,9 +135,9 @@ quiz_report_df
 #> # … with 2 more variables: kurtosis <dbl>, Cronbach_Alpha <dbl>
 ```
 
-### Question Summary and Item Analysis
+## Question Summary and Item Analysis
 
-`summary_questions()` calculate various question summary statistics and
+`summary_questions()` calculates various question summary statistics and
 item analysis into a data frame.
 
 ``` r
@@ -169,9 +169,7 @@ And, here is an **item analysis** for Moodle Grades Report.
     measure of the *proportion* of examinees who answered the item
     correctly.
 -   **`Discrimination_Index`** is for **Item Discrimination Index (r)**,
-    a measure of how well an item is able to distinguish between
-    examinees who are knowledgeable and those who are not. It is a
-    pairwise *point-biserial correlation* between the score of each
+    a pairwise *point-biserial correlation* between the score of each
     questions and total score of the quiz.
 
 ``` r
@@ -190,6 +188,11 @@ question_report_df %>%
 #> 8 Q8                   0.708                0.640 3.59e-32
 #> 9 Q9                   0.737                0.597 1.81e-27
 ```
+
+# Learn more
+
+-   [Get started using
+    moodleStats](https://lightbridge-ks.github.io/moodleStats/articles/moodleStats.html)
 
 ------------------------------------------------------------------------
 

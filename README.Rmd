@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 
 > A high-level R package for quiz & questions analysis of [Moodle Grades Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report)
 
-## Installation
+# Installation
 
 You can install the development version of moodleStats from [GitHub](https://github.com/) with:
 
@@ -32,17 +32,17 @@ You can install the development version of moodleStats from [GitHub](https://git
 remotes::install_github("Lightbridge-KS/moodleStats")
 ```
 
-## Goal
+# Goal
 
 The goal of this package it to provide a high-level functions for analysis of [Moodle Grades Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report) such as calculation of **descriptive statistics** for quiz & questions, and performingan **item analysis**.
 
-## Quick Workflow
+# Workflow
 
 ```{r load-pkg}
 library(moodleStats)
 ```
 
-### Read Data
+## Read Data
 
 Read Moodle Grades Report from `.csv` file into a Data Frame.
 
@@ -54,7 +54,7 @@ grades_df <- readr::read_csv(moodleStats_example("grades_report.csv"))
 head(grades_df)
 ```
 
-### Prepare Data
+## Prepare Data
 
 Cleaning and filtering data can be done in 1 step using `prep_grades_report()`
 
@@ -67,7 +67,7 @@ grades_df_preped <- prep_grades_report(grades_df,
 head(grades_df_preped)
 ```
 
-### Quiz Metadata
+## Quiz Metadata
 
 Show quiz metadata such as maximum settings of quiz and questions by `quiz_meta()`
 
@@ -75,7 +75,7 @@ Show quiz metadata such as maximum settings of quiz and questions by `quiz_meta(
 quiz_meta(grades_df_preped)
 ```
 
-### Quiz Summary
+## Quiz Summary
 
 `summary_quiz()` calculates various quiz summary statistics, and combine it into 1 row data frame.
 
@@ -84,9 +84,9 @@ quiz_report_df <- summary_quiz(grades_df_preped)
 quiz_report_df
 ```
 
-### Question Summary and Item Analysis
+## Question Summary and Item Analysis
 
-`summary_questions()` calculate various question summary statistics and item analysis into a data frame.
+`summary_questions()` calculates various question summary statistics and item analysis into a data frame.
 
 ```{r question_report_df}
 question_report_df <- summary_questions(grades_df_preped)
@@ -102,12 +102,16 @@ question_report_df %>%
 And, here is an **item analysis** for Moodle Grades Report.
 
 -   **`Difficulty_Index`** is for **Item Difficulty Index (p)**, a measure of the *proportion* of examinees who answered the item correctly.
--   **`Discrimination_Index`** is for **Item Discrimination Index (r)**, a measure of how well an item is able to distinguish between examinees who are knowledgeable and those who are not. It is a pairwise *point-biserial correlation* between the score of each questions and total score of the quiz.
+-   **`Discrimination_Index`** is for **Item Discrimination Index (r)**, a pairwise *point-biserial correlation* between the score of each questions and total score of the quiz.
 
 ```{r}
 question_report_df %>% 
   dplyr::select(Questions, Difficulty_Index:p.value)
 ```
+
+# Learn more
+
+-  [Get started using moodleStats](https://lightbridge-ks.github.io/moodleStats/articles/moodleStats.html)
 
 ------------------------------------------------------------------------
 
