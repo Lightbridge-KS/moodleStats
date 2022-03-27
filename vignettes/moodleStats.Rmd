@@ -37,15 +37,21 @@ grades_df <- readr::read_csv(path)
 
 ## Things to consider
 
-`grades_df` is a Moodle Grades Report that has `r nrow(grades_df)` rows and `r ncol(grades_df)` columns. Let's see an overview picture of this data frame using `dplyr::glimpse()`.
+`grades_df` is a Moodle Grades Report that has `r nrow(grades_df)` rows and `r ncol(grades_df)` columns. Let's see an overview of this data frame.
 
 ```{r}
-glimpse(grades_df)
+head(grades_df)
 ```
 
-As you can see from above, there are couple of things that **need cleaning** before working with this data in `R`.
+There are couple of things that **need cleaning** before working with this data in `R`.
 
 ### Need to clean
+
+#### Column Names
+
+```{r}
+names(grades_df)
+```
 
 **Spaces in column names**, we will have to remove them.
 
@@ -57,9 +63,23 @@ As you can see from above, there are couple of things that **need cleaning** bef
 
 These metadata (quiz maximum grades and question's maximum score) should be *removed* from the column names, and store it in another data structure that I will present to you later.
 
+#### Column Formatting
+
+```{r}
+grades_df$`Started on`[1]
+grades_df$Completed[1]
+```
+
 **Date-Time formatting** in `Started on` and `Completed` column; however, this package only use `Started on` column.
 
+```{r}
+unique(grades_df$`Grade/9.00`)
+unique(grades_df$`Q. 1 /1.00`)
+```
+
 **Numeric value formatting** in `Grade/9.00` and `Q.*` columns. Some characters need to be converted to `NA` such as "-" in this example.
+
+#### Last Row
 
 Last row of `grades_df` contains an "Overall average".
 
@@ -145,7 +165,8 @@ grades_df_preped <- prep_grades_report(grades_df,
                                        choose_state = "Finished",
                                        choose_grade = "max",
                                        choose_time = "first")
-glimpse(grades_df_preped)
+names(grades_df_preped)
+head(grades_df_preped)
 ```
 
 In `grades_df_preped`, the column names are cleaned, columns types are formatted properly, and missing values `NA` are assigned as previously described.
@@ -183,12 +204,46 @@ Now that we have prepared our data, It's time to calculate **quiz summary statis
 ```{r quiz_report_df}
 quiz_report_df <- summary_quiz(grades_df_preped)
 
-glimpse(quiz_report_df)
+head(quiz_report_df)
 ```
+
+All of these parameters were calculated from total quiz scores (`Grade` column) of each students except for `Cronbach_Alpha` which use all questions scores (`Q` columns), and `max_quiz` is a maximum score *possible* of this quiz.
+
+For interpretation of these parameters, please visit [`summary_quiz()`](https://lightbridge-ks.github.io/moodleStats/reference/summary_quiz.html) documentation.
+
+### Plot Quiz Score
+
+Let's plot a histogram of quiz score using `{ggplot2}`
+
+```{r}
+library(ggplot2)
+theme_set(theme_minimal())
+```
+
+```{r plot-hist, message=FALSE, warning=FALSE}
+grades_df_preped %>% 
+  ggplot(aes(Grade)) +
+  geom_histogram(binwidth = 0.5, fill = "darkblue", alpha = 0.7) +
+  
+  geom_vline(xintercept = quiz_report_df$mean, color = "maroon", lty = "dashed") +
+  annotate("label", 
+           x = quiz_report_df$mean, y = 70,
+           label = paste0("mean = ", round(quiz_report_df$mean, 2))) +
+  
+  scale_x_continuous(breaks = 0:10) +
+  xlim(0, 10) +
+  labs(title = "Quiz Score Distribution", 
+       caption  = "Note: multiple attempts quiz, choose the best score of each students.",
+       y = "Number of Students")
+```
+
+The plot shows that the distribution is non-Gaussian which has its tails on the left side, corresponding to the **negative skew** that we've calculated (skewness = `r round(quiz_report_df$skewness, 2)`), also this distribution has quite a bit of outliers with the **kurtosis** of `r round(quiz_report_df$kurtosis, 2)`
 
 ## Question Summary & Item Analysis
 
-Lastly, we can perform an item analysis and calculate statistics for each questions in the quiz.
+**`summary_questions()`** calculates various question summary statistics and item analysis into a data frame.
+
+Let's see what parameters we can get.
 
 ```{r question_report_df}
 question_report_df <- summary_questions(grades_df_preped)
@@ -197,6 +252,8 @@ names(question_report_df)
 
 ### Summary Stats of Questions
 
+Descriptive statistics of each questions are in the data frame from column `n` to `SD`
+
 ```{r}
 question_report_df %>% 
   select(Questions:SD)
@@ -204,10 +261,113 @@ question_report_df %>%
 
 ### Item Analysis
 
+Parameters of item analysis are `Difficulty_Index` and `Discrimination_Index`.
+
 ```{r}
 question_report_df %>% 
   select(Questions, Difficulty_Index:p.value)
 ```
+
+-   **Item Difficulty Index (p)** (`Difficulty_Index`) is a measure of the *proportion* of examinees who answered the item correctly. It ranges between 0.0 and 1.0, higher value indicate lower question difficulty, and vice versa.
+
+-   **Item Discrimination Index (r)** (`Discrimination_Index`) is a measure of how well an item is able to *distinguish* between examinees who are knowledgeable and those who are not. It is a pairwise *point-biserial correlation* between the score of each questions and total score of the quiz. It range between -1.0 to 1.0. Negative values suggest a problem, indicating that sco e of the particular question is negatively correlated with total quiz score; therefore, *revision* of the question is suggested.
+
+**Note:**
+
+-   `p.value` is a level of significant of `Discrimination_Index`
+
+-   How to interpret item analysis [see this](https://www.proftesting.com/test_topics/steps_9.php).
+
+
+
+Data visualization often delivers insight more naturally. Let's make some plots for item analysis!
+
+### Plot Question's Score
+
+Let's plot a distribution of each question's score. I think that violin plot will be a good one in this case.
+
+But first, we need to transform `grades_df_preped` to a long format.
+
+```{r grades_df_long}
+grades_df_long <- grades_df_preped %>% 
+  # Select Q1 to Q9 columns
+  select(starts_with("Q")) %>% 
+  # Pivot to long
+  tidyr::pivot_longer(cols = starts_with("Q"), names_to = "Questions", values_to = "Mark") %>% 
+  # Calculate mean of each questions
+  group_by(Questions) %>% 
+  mutate(Mark_mean = mean(Mark, na.rm = TRUE)) %>% 
+  ungroup()
+
+head(grades_df_long)
+```
+
+And then let's plot !
+
+I will put questions in x-axis, and distribution of score in y-axis.
+
+```{r, warning=FALSE}
+grades_df_long %>% 
+  ggplot(aes(Questions, Mark, color = Mark_mean, fill = Mark_mean)) +
+  # Violins
+  geom_violin(alpha = 0.3, show.legend = F) +
+  # Dots
+  stat_summary(fun = mean, geom = 'point', show.legend = F) +
+
+  scale_fill_viridis_c(option = "plasma", end = 0.8, begin = 0) +
+  scale_color_viridis_c(option = "plasma", end = 0.8, begin = 0) +
+  
+  labs(x = "Questions", y = "Mark", 
+       title = "Question's Score Distribution", 
+       caption = "Points indicate question's mean score") 
+
+```
+
+Note that the *points* is the plots above is **question's mean scores**, which, in this case, is *equal* to `Difficulty_Index`.
+
+(Because, **Item Difficulty Index (p)** is calculated by *mean score of each questions* divided by its range. For this example, every questions have a maximum score of **1**, so it is equal to mean score of each questions.)
+
+### Plot Item Discrimination vs Item Difficulty
+
+Let's make some text scatter plot with `Discrimination_Index` in x-axis and `1 - Difficulty_Index` in y-axis.
+
+I will use the `Difficulty_Level` to represent `1 - Difficulty_Index` and I will call discriminative power for `Discrimination_Index`.
+
+```{r}
+question_report_df <- question_report_df %>% 
+  mutate(Difficulty_Level = 1 - Difficulty_Index)
+```
+
+```{r}
+question_report_df %>% 
+  ggplot(aes(Discrimination_Index, Difficulty_Level, 
+             color = Difficulty_Level*Discrimination_Index)) +
+  
+  geom_text(aes(label = Questions), show.legend = F) +
+  
+  #scale_y_reverse() +
+  expand_limits(x = c(0,1), y = c(0,1)) +
+  labs(title = "Question's difficulty vs discrimination",
+       x = ("Discrimination Index (r)"),
+       y = ("Difficulty Level (1 - p)")) 
+```
+
+This plot shows the difficulty level (1 - p) and discriminative power (r) for each questions in one picture.
+
+As we move from the lower-left corner to the upper-right corner of the graph, the difficulty level and discrimination index for questions increases.
+
+By looking at this graph, It seems to me that there are *positive correlation* between these 2 variables, the more difficult the questions are, the more discriminative power.
+
+Let's verify this assumption.
+
+```{r}
+res <- cor.test(question_report_df$Difficulty_Level,
+                question_report_df$Discrimination_Index,
+                method = "pearson")
+res
+```
+
+The report show that there is a **positive correlation** ($r$ = `r round(res$estimate, 3)`) between difficulty level (1 - p) and discriminative power (r) of questions, although it is *not* statistically significant (p-value = `r round(res$p.value, 3)`).
 
 ------------------------------------------------------------------------
 
