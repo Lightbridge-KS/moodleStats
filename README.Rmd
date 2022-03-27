@@ -51,7 +51,7 @@ grades_df <- readr::read_csv(moodleStats_example("grades_report.csv"))
 ```
 
 ```{r}
-dplyr::glimpse(grades_df)
+head(grades_df)
 ```
 
 ### Prepare Data
@@ -64,7 +64,7 @@ grades_df_preped <- prep_grades_report(grades_df,
                                        choose_grade = "max", # 2. choose only the best score of each student
                                        choose_time = "first" # 3. choose the first time that student submitted
                                        ) 
-dplyr::glimpse(grades_df_preped)
+head(grades_df_preped)
 ```
 
 ### Quiz Metadata
@@ -81,10 +81,12 @@ quiz_meta(grades_df_preped)
 
 ```{r quiz_report_df}
 quiz_report_df <- summary_quiz(grades_df_preped)
-dplyr::glimpse(quiz_report_df)
+quiz_report_df
 ```
 
 ### Question Summary and Item Analysis
+
+`summary_questions()` calculate various question summary statistics and item analysis into a data frame.
 
 ```{r question_report_df}
 question_report_df <- summary_questions(grades_df_preped)
