@@ -12,7 +12,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 coverage](https://codecov.io/gh/Lightbridge-KS/moodleStats/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Lightbridge-KS/moodleStats?branch=main)
 <!-- badges: end -->
 
-> A high-level R package for quiz & questions analysis of [Moodle Grades
+> A high-level, ready-to-use R package for quiz & questions analysis of
+> [Moodle Grades
 > Report](https://docs.moodle.org/311/en/Quiz_reports#Grades_report)
 
 # Installation
@@ -197,4 +198,4 @@ question_report_df %>%
 
 ------------------------------------------------------------------------
 
-Last updated: 27 March 2022
+Last updated: 30 March 2022
