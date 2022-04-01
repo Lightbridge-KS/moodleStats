@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# moodleStats
+# moodleStats <a href="https://lightbridge-ks.github.io/moodleStats/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 
@@ -67,10 +67,11 @@ head(grades_df)
 #> 4 Snow    Leeah        NA          NA         leeah.sno_016@… Fini… 21 February…
 #> 5 al-Hab… Lawrence     NA          NA         lawrence.al_20… Fini… 22 February…
 #> 6 el-Sal… Isaiah       NA          NA         isaiah.el_140@… Fini… 23 February…
-#> # … with 12 more variables: Completed <chr>, Time taken <chr>,
-#> #   Grade/9.00 <chr>, Q. 1 /1.00 <chr>, Q. 2 /1.00 <chr>, Q. 3 /1.00 <chr>,
-#> #   Q. 4 /1.00 <chr>, Q. 5 /1.00 <chr>, Q. 6 /1.00 <chr>, Q. 7 /1.00 <chr>,
-#> #   Q. 8 /1.00 <chr>, Q. 9 /1.00 <chr>
+#> # … with 12 more variables: Completed <chr>, `Time taken` <chr>,
+#> #   `Grade/9.00` <chr>, `Q. 1 /1.00` <chr>, `Q. 2 /1.00` <chr>,
+#> #   `Q. 3 /1.00` <chr>, `Q. 4 /1.00` <chr>, `Q. 5 /1.00` <chr>,
+#> #   `Q. 6 /1.00` <chr>, `Q. 7 /1.00` <chr>, `Q. 8 /1.00` <chr>,
+#> #   `Q. 9 /1.00` <chr>
 ```
 
 ## Prepare Data
@@ -198,4 +199,4 @@ question_report_df %>%
 
 ------------------------------------------------------------------------
 
-Last updated: 30 March 2022
+Last updated: 01 April 2022
